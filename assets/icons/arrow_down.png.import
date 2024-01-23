@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://djat1ch41ive3"
-path="res://.godot/imported/clippy.png-a8882733c20b5937839a9493f3f27df4.ctex"
+uid="uid://b0oob4urg7yb2"
+path="res://.godot/imported/arrow_down.png-c93ce13fc34e8f54091b090433da4319.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/_temp/clippy.png"
-dest_files=["res://.godot/imported/clippy.png-a8882733c20b5937839a9493f3f27df4.ctex"]
+source_file="res://assets/icons/arrow_down.png"
+dest_files=["res://.godot/imported/arrow_down.png-c93ce13fc34e8f54091b090433da4319.ctex"]
 
 [params]
 

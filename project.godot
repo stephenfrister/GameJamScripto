@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="Game Jam Scripto"
+run/main_scene="res://Main.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -18,3 +19,7 @@ config/icon="res://icon.svg"
 
 Data="*res://source/global/Data.gd"
 Game="*res://source/global/Game.gd"
+
+[display]
+
+window/size/resizable=false
