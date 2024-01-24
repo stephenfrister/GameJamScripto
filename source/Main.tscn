@@ -1,0 +1,886 @@
+[gd_scene load_steps=24 format=3 uid="uid://br6gdeossjpil"]
+
+[ext_resource type="Script" path="res://source/scripts/Main.gd" id="1_y0ww2"]
+[ext_resource type="AudioStream" uid="uid://o4i1lk2xu0as" path="res://assets/audio/music/CitySunshine-loop.mp3" id="2_31upr"]
+[ext_resource type="Theme" uid="uid://bsql4bg6crqbs" path="res://assets/themes/button_theme_blue_light.tres" id="2_jqfhl"]
+[ext_resource type="PackedScene" uid="uid://bdrmok51eov0r" path="res://source/Parser.tscn" id="2_k85lx"]
+[ext_resource type="AudioStream" uid="uid://dcxtlctlgkmk" path="res://assets/audio/music/MysteriousLights-loop.mp3" id="3_rklpt"]
+[ext_resource type="Texture2D" uid="uid://poyvht0rbyhr" path="res://assets/art/spritesheet_v01_5pm.png" id="4_y6n4f"]
+[ext_resource type="StyleBox" uid="uid://bjjs87buslrdx" path="res://assets/themes/style_box_flat_blue_light.tres" id="5_bcmf5"]
+[ext_resource type="Texture2D" uid="uid://b0oob4urg7yb2" path="res://assets/icons/arrow_down.png" id="5_s8jwh"]
+[ext_resource type="StyleBox" uid="uid://cxmouk6dkrx6e" path="res://assets/themes/style_box_flat_green_light.tres" id="5_x38da"]
+[ext_resource type="StyleBox" uid="uid://c3do76iwbhxsa" path="res://assets/themes/style_box_flat_purple_light.tres" id="6_e7qo5"]
+[ext_resource type="Theme" uid="uid://bsdi55gxg2x2" path="res://assets/themes/font_theme_indie.tres" id="7_1i2sn"]
+[ext_resource type="Texture2D" uid="uid://c7d7m1pm4h3g3" path="res://assets/art/girl.png" id="9_m2kyw"]
+[ext_resource type="StyleBox" uid="uid://dcisim3nvi4mk" path="res://assets/themes/style_box_flat_belle_light.tres" id="10_3xfsc"]
+[ext_resource type="Theme" uid="uid://ciw62x4gmq5wj" path="res://assets/themes/font_theme_amatic.tres" id="11_fwc78"]
+[ext_resource type="FontFile" uid="uid://cjc828psgmrb5" path="res://assets/fonts/AmaticSC-Bold.ttf" id="15_763l6"]
+[ext_resource type="Shader" path="res://assets/shader/new_shader.gdshader" id="15_xrwaa"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pi5qg"]
+bg_color = Color(0.176471, 0.176471, 0.176471, 1)
+
+[sub_resource type="Theme" id="Theme_y4ixu"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3oa7f"]
+
+[sub_resource type="Animation" id="Animation_6rwwu"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Arrow:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(18, 6)]
+}
+
+[sub_resource type="Animation" id="Animation_qcw1b"]
+resource_name = "bounce"
+length = 1.6
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Arrow:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.8, 1.6),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(18, 10), Vector2(18, 6), Vector2(18, 10)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_kd810"]
+_data = {
+"RESET": SubResource("Animation_6rwwu"),
+"bounce": SubResource("Animation_qcw1b")
+}
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_5qvv1"]
+shader = ExtResource("15_xrwaa")
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_y0ww2")
+
+[node name="Background" type="Panel" parent="."]
+offset_right = 1152.0
+offset_bottom = 648.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_pi5qg")
+metadata/_edit_lock_ = true
+
+[node name="Sound" type="Node2D" parent="."]
+
+[node name="Label" type="Label" parent="Sound"]
+offset_left = 61.0
+offset_top = 568.0
+offset_right = 135.0
+offset_bottom = 619.0
+theme = ExtResource("11_fwc78")
+text = "Music:"
+
+[node name="Sunshine" type="Button" parent="Sound"]
+offset_left = 139.0
+offset_top = 574.0
+offset_right = 198.0
+offset_bottom = 631.0
+scale = Vector2(0.7, 0.7)
+focus_mode = 0
+theme = ExtResource("2_jqfhl")
+
+[node name="Music" type="AudioStreamPlayer" parent="Sound/Sunshine"]
+stream = ExtResource("2_31upr")
+
+[node name="Icon" type="Sprite2D" parent="Sound/Sunshine"]
+position = Vector2(29.9999, 28.5714)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("4_y6n4f")
+region_enabled = true
+region_rect = Rect2(1543.08, 934.679, 69.3209, 69.1834)
+metadata/_edit_lock_ = true
+
+[node name="Mystery" type="Button" parent="Sound"]
+offset_left = 183.0
+offset_top = 574.0
+offset_right = 240.0
+offset_bottom = 631.0
+scale = Vector2(0.7, 0.7)
+focus_mode = 0
+theme = ExtResource("2_jqfhl")
+
+[node name="Music" type="AudioStreamPlayer" parent="Sound/Mystery"]
+stream = ExtResource("3_rklpt")
+
+[node name="Icon" type="Sprite2D" parent="Sound/Mystery"]
+position = Vector2(28.5714, 28.5714)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("4_y6n4f")
+region_enabled = true
+region_rect = Rect2(1642.91, 935.036, 70.3884, 69.5194)
+metadata/_edit_lock_ = true
+
+[node name="Mute" type="Button" parent="Sound"]
+offset_left = 226.0
+offset_top = 574.0
+offset_right = 283.0
+offset_bottom = 631.0
+scale = Vector2(0.7, 0.7)
+focus_mode = 0
+theme = ExtResource("2_jqfhl")
+
+[node name="Icon" type="Sprite2D" parent="Sound/Mute"]
+position = Vector2(28.5714, 28.5714)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("4_y6n4f")
+region_enabled = true
+region_rect = Rect2(1743.04, 934.378, 70.1598, 70.1611)
+metadata/_edit_lock_ = true
+
+[node name="Volume" type="Label" parent="Sound"]
+offset_left = 232.0
+offset_top = 611.0
+offset_right = 272.0
+offset_bottom = 670.0
+scale = Vector2(0.7, 0.7)
+theme = ExtResource("7_1i2sn")
+text = "50
+"
+horizontal_alignment = 1
+
+[node name="Slider" type="HSlider" parent="Sound"]
+offset_left = 66.0
+offset_top = 613.0
+offset_right = 223.0
+offset_bottom = 645.0
+theme = SubResource("Theme_y4ixu")
+theme_override_styles/slider = ExtResource("5_bcmf5")
+theme_override_styles/grabber_area = ExtResource("5_bcmf5")
+theme_override_styles/grabber_area_highlight = ExtResource("5_bcmf5")
+value = 50.0
+
+[node name="Parser" parent="." instance=ExtResource("2_k85lx")]
+
+[node name="Theme" type="Node2D" parent="."]
+
+[node name="Panel1" type="Panel" parent="Theme"]
+offset_left = 516.0
+offset_top = 601.0
+offset_right = 556.0
+offset_bottom = 641.0
+theme_override_styles/panel = ExtResource("5_bcmf5")
+
+[node name="Button" type="Button" parent="Theme/Panel1"]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_right = 41.0
+offset_bottom = 40.0
+focus_mode = 0
+metadata/_edit_lock_ = true
+
+[node name="Panel2" type="Panel" parent="Theme"]
+offset_left = 559.0
+offset_top = 601.0
+offset_right = 599.0
+offset_bottom = 641.0
+theme_override_styles/panel = ExtResource("5_x38da")
+
+[node name="Button" type="Button" parent="Theme/Panel2"]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_right = 41.0
+offset_bottom = 40.0
+focus_mode = 0
+metadata/_edit_lock_ = true
+
+[node name="Panel3" type="Panel" parent="Theme"]
+offset_left = 602.0
+offset_top = 601.0
+offset_right = 642.0
+offset_bottom = 641.0
+theme_override_styles/panel = ExtResource("6_e7qo5")
+
+[node name="Button" type="Button" parent="Theme/Panel3"]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_right = 41.0
+offset_bottom = 40.0
+focus_mode = 0
+metadata/_edit_lock_ = true
+
+[node name="Choices" type="Node2D" parent="."]
+
+[node name="Panel" type="Panel" parent="Choices"]
+offset_left = 380.0
+offset_top = 235.0
+offset_right = 781.0
+offset_bottom = 594.0
+theme_override_styles/panel = ExtResource("5_bcmf5")
+
+[node name="Name" type="RichTextLabel" parent="Choices"]
+offset_left = 882.0
+offset_top = 711.0
+offset_right = 1150.0
+offset_bottom = 740.0
+
+[node name="Text" type="RichTextLabel" parent="Choices"]
+offset_left = 397.0
+offset_top = 254.0
+offset_right = 765.0
+offset_bottom = 439.0
+theme = ExtResource("11_fwc78")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Choices"]
+custom_minimum_size = Vector2(350, 30)
+offset_left = 397.0
+offset_top = 442.0
+offset_right = 761.0
+offset_bottom = 587.0
+horizontal_scroll_mode = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="Choices/ScrollContainer"]
+custom_minimum_size = Vector2(350, 30)
+layout_mode = 2
+theme_override_constants/margin_left = 3
+theme_override_constants/margin_top = 3
+theme_override_constants/margin_right = 3
+theme_override_constants/margin_bottom = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Choices/ScrollContainer/MarginContainer"]
+custom_minimum_size = Vector2(350, 30)
+layout_mode = 2
+
+[node name="Dialogue" type="Node2D" parent="."]
+
+[node name="Title" type="Label" parent="Dialogue"]
+offset_left = 54.0
+offset_top = 621.0
+offset_right = 239.0
+offset_bottom = 652.0
+vertical_alignment = 1
+
+[node name="Panel" type="Panel" parent="Dialogue"]
+offset_left = 379.0
+offset_top = 22.0
+offset_right = 780.0
+offset_bottom = 230.0
+theme_override_styles/panel = ExtResource("5_bcmf5")
+
+[node name="Left" type="Panel" parent="Dialogue"]
+visible = false
+clip_children = 1
+offset_left = 284.0
+offset_top = 55.0
+offset_right = 384.0
+offset_bottom = 255.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_3oa7f")
+
+[node name="Angle" type="Panel" parent="Dialogue/Left"]
+layout_mode = 0
+offset_left = 100.909
+offset_top = 19.0909
+offset_right = 200.909
+offset_bottom = 119.091
+rotation = 0.785398
+theme_override_styles/panel = ExtResource("5_bcmf5")
+metadata/_edit_lock_ = true
+
+[node name="Right" type="Panel" parent="Dialogue"]
+visible = false
+clip_children = 1
+offset_left = 875.0
+offset_top = 235.0
+offset_right = 975.0
+offset_bottom = 435.0
+rotation = 3.14159
+theme_override_styles/panel = SubResource("StyleBoxFlat_3oa7f")
+
+[node name="Angle" type="Panel" parent="Dialogue/Right"]
+layout_mode = 0
+offset_left = 100.909
+offset_top = 19.0909
+offset_right = 200.909
+offset_bottom = 119.091
+rotation = 0.785398
+theme_override_styles/panel = ExtResource("5_bcmf5")
+metadata/_edit_lock_ = true
+
+[node name="Forward" type="Button" parent="Dialogue"]
+offset_left = 553.0
+offset_top = 190.0
+offset_right = 615.0
+offset_bottom = 221.0
+focus_mode = 0
+
+[node name="Arrow" type="TextureRect" parent="Dialogue/Forward"]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 6.0
+offset_right = 44.0
+offset_bottom = 23.0
+mouse_filter = 2
+texture = ExtResource("5_s8jwh")
+metadata/_edit_lock_ = true
+
+[node name="Animation" type="AnimationPlayer" parent="Dialogue/Forward"]
+libraries = {
+"": SubResource("AnimationLibrary_kd810")
+}
+autoplay = "bounce"
+
+[node name="Text" type="RichTextLabel" parent="Dialogue"]
+offset_left = 396.0
+offset_top = 40.0
+offset_right = 767.0
+offset_bottom = 185.0
+theme = ExtResource("11_fwc78")
+
+[node name="Clicker" type="Button" parent="Dialogue"]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 320.0
+offset_top = 36.0
+offset_right = 849.0
+offset_bottom = 248.0
+focus_mode = 0
+mouse_filter = 1
+
+[node name="Inventory" type="Node2D" parent="."]
+visible = false
+
+[node name="Panel" type="Panel" parent="Inventory"]
+offset_left = 1007.0
+offset_top = 28.0
+offset_right = 1301.0
+offset_bottom = 490.0
+
+[node name="Label" type="Label" parent="Inventory"]
+offset_left = 1029.0
+offset_top = 43.0
+offset_right = 1155.0
+offset_bottom = 66.0
+text = "Inventory"
+
+[node name="Text" type="RichTextLabel" parent="Inventory"]
+offset_left = 1038.0
+offset_top = 96.0
+offset_right = 1273.0
+offset_bottom = 460.0
+text = "..."
+
+[node name="Character" type="Node2D" parent="."]
+
+[node name="Name" type="Label" parent="Character"]
+offset_left = 21.0
+offset_top = 23.0
+offset_right = 300.0
+offset_bottom = 74.0
+theme = ExtResource("11_fwc78")
+horizontal_alignment = 1
+
+[node name="Panel" type="Panel" parent="Character"]
+offset_left = 17.0
+offset_top = 77.0
+offset_right = 305.0
+offset_bottom = 561.0
+theme_override_styles/panel = ExtResource("10_3xfsc")
+
+[node name="Sprite2D" type="Sprite2D" parent="Character"]
+position = Vector2(162, 302)
+texture = ExtResource("9_m2kyw")
+
+[node name="Companion" type="Node2D" parent="."]
+
+[node name="Panel" type="Panel" parent="Companion"]
+offset_left = 852.0
+offset_top = 78.0
+offset_right = 1140.0
+offset_bottom = 559.0
+theme_override_styles/panel = ExtResource("10_3xfsc")
+
+[node name="Sprite2D" type="Sprite2D" parent="Companion"]
+visible = false
+material = SubResource("ShaderMaterial_5qvv1")
+position = Vector2(1000, 304)
+texture = ExtResource("9_m2kyw")
+
+[node name="Test" type="Node2D" parent="."]
+
+[node name="Start" type="Button" parent="Test"]
+offset_left = 1051.0
+offset_top = 11.0
+offset_right = 1138.0
+offset_bottom = 65.0
+focus_mode = 0
+text = "Test 
+Restart"
+
+[node name="Finish" type="Button" parent="Test"]
+offset_left = 996.0
+offset_top = 575.0
+offset_right = 1139.0
+offset_bottom = 636.0
+focus_mode = 0
+theme_override_fonts/font = ExtResource("15_763l6")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = ExtResource("5_bcmf5")
+theme_override_styles/hover = ExtResource("5_x38da")
+text = "End Game"
+
+[node name="Button" type="Button" parent="Test"]
+visible = false
+offset_left = 860.0
+offset_top = 384.0
+offset_right = 947.0
+offset_bottom = 415.0
+focus_mode = 0
+
+[node name="Story" type="Button" parent="Test"]
+visible = false
+offset_left = 860.0
+offset_top = 418.0
+offset_right = 947.0
+offset_bottom = 449.0
+focus_mode = 0
+text = "Story"
+
+[node name="Road" type="Button" parent="Test"]
+visible = false
+offset_left = 860.0
+offset_top = 486.0
+offset_right = 947.0
+offset_bottom = 517.0
+focus_mode = 0
+text = "Test Road"
+
+[node name="Simple" type="Button" parent="Test"]
+visible = false
+offset_left = 860.0
+offset_top = 520.0
+offset_right = 947.0
+offset_bottom = 551.0
+focus_mode = 0
+text = "Simple"
+
+[node name="Endings" type="Button" parent="Test"]
+visible = false
+offset_left = 860.0
+offset_top = 452.0
+offset_right = 947.0
+offset_bottom = 483.0
+focus_mode = 0
+text = "Endings"
+
+[node name="_archive" type="Node2D" parent="."]
+
+[node name="Level_End" type="Node2D" parent="_archive"]
+visible = false
+
+[node name="Defeat" type="Panel" parent="_archive/Level_End"]
+offset_left = 410.0
+offset_top = 72.0
+offset_right = 500.0
+offset_bottom = 147.0
+
+[node name="Unknown" type="Panel" parent="_archive/Level_End"]
+offset_left = 514.0
+offset_top = 73.0
+offset_right = 604.0
+offset_bottom = 148.0
+
+[node name="Success" type="Panel" parent="_archive/Level_End"]
+offset_left = 616.0
+offset_top = 73.0
+offset_right = 706.0
+offset_bottom = 148.0
+
+[node name="Level_3" type="Node2D" parent="_archive"]
+visible = false
+
+[node name="Dialog1" type="Panel" parent="_archive/Level_3"]
+offset_left = 409.0
+offset_top = 155.0
+offset_right = 479.0
+offset_bottom = 225.0
+
+[node name="Dialog2" type="Panel" parent="_archive/Level_3"]
+offset_left = 485.0
+offset_top = 155.0
+offset_right = 555.0
+offset_bottom = 225.0
+
+[node name="Dialog3" type="Panel" parent="_archive/Level_3"]
+offset_left = 561.0
+offset_top = 155.0
+offset_right = 631.0
+offset_bottom = 225.0
+
+[node name="Dialog4" type="Panel" parent="_archive/Level_3"]
+offset_left = 637.0
+offset_top = 154.0
+offset_right = 707.0
+offset_bottom = 224.0
+
+[node name="Button1" type="Button" parent="_archive/Level_3"]
+offset_left = 410.0
+offset_top = 156.0
+offset_right = 478.0
+offset_bottom = 224.0
+text = "1"
+
+[node name="Button2" type="Button" parent="_archive/Level_3"]
+offset_left = 486.0
+offset_top = 156.0
+offset_right = 554.0
+offset_bottom = 224.0
+text = "2"
+
+[node name="Button3" type="Button" parent="_archive/Level_3"]
+offset_left = 562.0
+offset_top = 156.0
+offset_right = 630.0
+offset_bottom = 224.0
+text = "3"
+
+[node name="Button4" type="Button" parent="_archive/Level_3"]
+offset_left = 638.0
+offset_top = 156.0
+offset_right = 706.0
+offset_bottom = 224.0
+text = "4"
+
+[node name="Level_2" type="Node2D" parent="_archive"]
+visible = false
+
+[node name="Dialog1" type="Panel" parent="_archive/Level_2"]
+offset_left = 409.0
+offset_top = 230.0
+offset_right = 479.0
+offset_bottom = 300.0
+
+[node name="Dialog2" type="Panel" parent="_archive/Level_2"]
+offset_left = 485.0
+offset_top = 230.0
+offset_right = 555.0
+offset_bottom = 300.0
+
+[node name="Dialog3" type="Panel" parent="_archive/Level_2"]
+offset_left = 561.0
+offset_top = 230.0
+offset_right = 631.0
+offset_bottom = 300.0
+
+[node name="Dialog4" type="Panel" parent="_archive/Level_2"]
+offset_left = 637.0
+offset_top = 230.0
+offset_right = 707.0
+offset_bottom = 300.0
+
+[node name="Button1" type="Button" parent="_archive/Level_2"]
+offset_left = 410.0
+offset_top = 231.0
+offset_right = 478.0
+offset_bottom = 299.0
+text = "1"
+
+[node name="Button2" type="Button" parent="_archive/Level_2"]
+offset_left = 486.0
+offset_top = 231.0
+offset_right = 554.0
+offset_bottom = 299.0
+text = "2"
+
+[node name="Button3" type="Button" parent="_archive/Level_2"]
+offset_left = 562.0
+offset_top = 231.0
+offset_right = 630.0
+offset_bottom = 299.0
+text = "3"
+
+[node name="Button4" type="Button" parent="_archive/Level_2"]
+offset_left = 638.0
+offset_top = 231.0
+offset_right = 706.0
+offset_bottom = 299.0
+text = "4"
+
+[node name="Level_1" type="Node2D" parent="_archive"]
+visible = false
+
+[node name="Dialog1" type="Panel" parent="_archive/Level_1"]
+offset_left = 409.0
+offset_top = 305.0
+offset_right = 479.0
+offset_bottom = 375.0
+
+[node name="Dialog2" type="Panel" parent="_archive/Level_1"]
+offset_left = 485.0
+offset_top = 305.0
+offset_right = 555.0
+offset_bottom = 375.0
+
+[node name="Dialog3" type="Panel" parent="_archive/Level_1"]
+offset_left = 561.0
+offset_top = 305.0
+offset_right = 631.0
+offset_bottom = 375.0
+
+[node name="Dialog4" type="Panel" parent="_archive/Level_1"]
+offset_left = 637.0
+offset_top = 305.0
+offset_right = 707.0
+offset_bottom = 375.0
+
+[node name="Button1" type="Button" parent="_archive/Level_1"]
+offset_left = 410.0
+offset_top = 306.0
+offset_right = 478.0
+offset_bottom = 374.0
+text = "1"
+
+[node name="Button2" type="Button" parent="_archive/Level_1"]
+offset_left = 486.0
+offset_top = 306.0
+offset_right = 554.0
+offset_bottom = 374.0
+text = "2"
+
+[node name="Button3" type="Button" parent="_archive/Level_1"]
+offset_left = 562.0
+offset_top = 306.0
+offset_right = 630.0
+offset_bottom = 374.0
+text = "3"
+
+[node name="Button4" type="Button" parent="_archive/Level_1"]
+offset_left = 638.0
+offset_top = 306.0
+offset_right = 706.0
+offset_bottom = 374.0
+text = "4"
+
+[node name="Level_0" type="Node2D" parent="_archive"]
+visible = false
+
+[node name="Dialog1" type="Panel" parent="_archive/Level_0"]
+offset_left = 409.0
+offset_top = 380.0
+offset_right = 479.0
+offset_bottom = 450.0
+
+[node name="Dialog2" type="Panel" parent="_archive/Level_0"]
+offset_left = 485.0
+offset_top = 380.0
+offset_right = 555.0
+offset_bottom = 450.0
+
+[node name="Dialog3" type="Panel" parent="_archive/Level_0"]
+offset_left = 561.0
+offset_top = 380.0
+offset_right = 631.0
+offset_bottom = 450.0
+
+[node name="Dialog4" type="Panel" parent="_archive/Level_0"]
+offset_left = 637.0
+offset_top = 380.0
+offset_right = 707.0
+offset_bottom = 450.0
+
+[node name="Button1" type="Button" parent="_archive/Level_0"]
+offset_left = 410.0
+offset_top = 381.0
+offset_right = 478.0
+offset_bottom = 449.0
+text = "1"
+
+[node name="Button2" type="Button" parent="_archive/Level_0"]
+offset_left = 486.0
+offset_top = 381.0
+offset_right = 554.0
+offset_bottom = 449.0
+text = "2"
+
+[node name="Button3" type="Button" parent="_archive/Level_0"]
+offset_left = 562.0
+offset_top = 381.0
+offset_right = 630.0
+offset_bottom = 449.0
+text = "3"
+
+[node name="Button4" type="Button" parent="_archive/Level_0"]
+offset_left = 638.0
+offset_top = 381.0
+offset_right = 706.0
+offset_bottom = 449.0
+text = "4"
+
+[node name="Mentor" type="Node2D" parent="_archive"]
+visible = false
+
+[node name="Panel" type="Panel" parent="_archive/Mentor"]
+offset_left = 837.0
+offset_top = 103.0
+offset_right = 1138.0
+offset_bottom = 532.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Node" type="Node2D" parent="_archive/Mentor"]
+visible = false
+
+[node name="Label" type="Label" parent="_archive/Mentor/Node"]
+offset_left = 964.0
+offset_top = -1.0
+offset_right = 1044.0
+offset_bottom = 22.0
+text = "Aspect"
+metadata/_edit_use_anchors_ = true
+
+[node name="Supports" type="Panel" parent="_archive/Mentor/Node"]
+offset_left = 836.0
+offset_top = 30.0
+offset_right = 907.0
+offset_bottom = 94.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Neutral" type="Panel" parent="_archive/Mentor/Node"]
+offset_left = 955.0
+offset_top = 29.0
+offset_right = 1026.0
+offset_bottom = 93.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Against" type="Panel" parent="_archive/Mentor/Node"]
+offset_left = 1060.0
+offset_top = 29.0
+offset_right = 1131.0
+offset_bottom = 93.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="_archive/Mentor"]
+offset_left = 964.0
+offset_top = 111.0
+offset_right = 1022.0
+offset_bottom = 134.0
+text = "Mentor"
+metadata/_edit_use_anchors_ = true
+
+[node name="Character" type="Node2D" parent="_archive"]
+visible = false
+
+[node name="Panel" type="Panel" parent="_archive/Character"]
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 320.0
+offset_bottom = 636.0
+
+[node name="TextureRect" type="TextureRect" parent="_archive/Character"]
+visible = false
+offset_left = 39.0
+offset_top = 153.0
+offset_right = 279.0
+offset_bottom = 393.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Alignment" type="Node2D" parent="_archive/Character"]
+visible = false
+
+[node name="Good" type="Panel" parent="_archive/Character/Alignment"]
+offset_left = 16.0
+offset_top = 40.0
+offset_right = 87.0
+offset_bottom = 104.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Neutral" type="Panel" parent="_archive/Character/Alignment"]
+offset_left = 135.0
+offset_top = 39.0
+offset_right = 206.0
+offset_bottom = 103.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Evil" type="Panel" parent="_archive/Character/Alignment"]
+offset_left = 240.0
+offset_top = 39.0
+offset_right = 311.0
+offset_bottom = 103.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="_archive/Character/Alignment"]
+offset_left = 130.0
+offset_top = 6.0
+offset_right = 210.0
+offset_bottom = 29.0
+text = "Alignment"
+metadata/_edit_use_anchors_ = true
+
+[node name="Artifact" type="Node2D" parent="_archive/Character"]
+visible = false
+position = Vector2(-1, 537)
+
+[node name="Weak" type="Panel" parent="_archive/Character/Artifact"]
+offset_left = 15.0
+offset_top = 37.0
+offset_right = 86.0
+offset_bottom = 101.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Medium" type="Panel" parent="_archive/Character/Artifact"]
+offset_left = 135.0
+offset_top = 39.0
+offset_right = 206.0
+offset_bottom = 103.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Strong" type="Panel" parent="_archive/Character/Artifact"]
+offset_left = 240.0
+offset_top = 39.0
+offset_right = 311.0
+offset_bottom = 103.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="_archive/Character/Artifact"]
+offset_left = 140.0
+offset_top = 12.0
+offset_right = 217.0
+offset_bottom = 35.0
+text = "Artifact"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="_archive/Character"]
+offset_left = 119.0
+offset_top = 17.0
+offset_right = 196.0
+offset_bottom = 40.0
+text = "Character"
+metadata/_edit_use_anchors_ = true
+
+[node name="Button" type="Button" parent="."]
+offset_left = 855.0
+offset_top = 11.0
+offset_right = 942.0
+offset_bottom = 65.0
+focus_mode = 0
+text = "Toggle 
+Evil Twin"
+
+[connection signal="pressed" from="Sound/Sunshine" to="." method="_on_sound_pressed" binds= ["sunshine"]]
+[connection signal="pressed" from="Sound/Mystery" to="." method="_on_sound_pressed" binds= ["mystery"]]
+[connection signal="pressed" from="Sound/Mute" to="." method="_on_sound_pressed" binds= ["mute"]]
+[connection signal="value_changed" from="Sound/Slider" to="." method="_on_slider_value_changed"]
+[connection signal="game_over" from="Parser" to="." method="_on_parser_game_over"]
+[connection signal="pressed" from="Theme/Panel1/Button" to="." method="set_theme_1"]
+[connection signal="pressed" from="Theme/Panel2/Button" to="." method="set_theme_2"]
+[connection signal="pressed" from="Theme/Panel3/Button" to="." method="set_theme_3"]
+[connection signal="pressed" from="Dialogue/Forward" to="." method="_on_next_pressed"]
+[connection signal="pressed" from="Dialogue/Clicker" to="." method="_on_clicker_pressed"]
+[connection signal="pressed" from="Test/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Test/Finish" to="." method="_on_finish_pressed"]
+[connection signal="pressed" from="Test/Button" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Test/Story" to="." method="_on_select_scenario" binds= ["story"]]
+[connection signal="pressed" from="Test/Road" to="." method="_on_select_scenario" binds= ["test"]]
+[connection signal="pressed" from="Test/Simple" to="." method="_on_select_scenario" binds= ["simple"]]
+[connection signal="pressed" from="Test/Endings" to="." method="_on_select_scenario" binds= ["ending"]]
+[connection signal="pressed" from="Button" to="." method="_on_twin_toggle_pressed"]

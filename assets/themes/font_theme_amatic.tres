@@ -1,0 +1,8 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://ciw62x4gmq5wj"]
+
+[ext_resource type="FontFile" uid="uid://cjc828psgmrb5" path="res://assets/fonts/AmaticSC-Bold.ttf" id="1_mk3eg"]
+
+[resource]
+default_font_size = 35
+Label/fonts/font = ExtResource("1_mk3eg")
+RichTextLabel/fonts/normal_font = ExtResource("1_mk3eg")

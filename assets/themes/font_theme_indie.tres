@@ -1,0 +1,8 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://bsdi55gxg2x2"]
+
+[ext_resource type="FontFile" uid="uid://dhir6altlx06l" path="res://assets/fonts/IndieFlower-Regular.ttf" id="1_agi3e"]
+
+[resource]
+default_font_size = 40
+Label/fonts/font = ExtResource("1_agi3e")
+RichTextLabel/fonts/normal_font = ExtResource("1_agi3e")

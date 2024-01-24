@@ -1,0 +1,232 @@
+[
+  {
+    "text": "Start",
+    "blockType": "sceneHeading",
+    "id": "7a4db699-6a8a-4199-b1ac-b8863d917057"
+  },
+  {
+    "text": "Character",
+    "blockType": "character",
+    "id": "943ed560-40f1-43eb-904d-58528d8077d8"
+  },
+  {
+    "text": "This is a test of the endings. There are three choices, and each path is unique.",
+    "blockType": "dialogue",
+    "id": "dbe8b780-4992-43af-9678-98f356d06cfe"
+  },
+  {
+    "text": "action",
+    "blockType": "action",
+    "id": "2542d47e-5eb3-406a-8b4f-dbdceef5b255"
+  },
+  {
+    "text": "Test",
+    "blockType": "character",
+    "id": "d7e27ada-403a-4a6c-b22f-cf3e228e8fb3"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "709e4bac-b9f2-47b8-a36f-e91e4f99d033"
+  },
+  {
+    "text": "Ending 1",
+    "blockType": "dialogue",
+    "id": "9b7425fa-d6c2-4492-acb9-f3be791e273a"
+  },
+  {
+    "text": "END1",
+    "blockType": "transition",
+    "id": "750d731a-8efd-4350-a052-0859027f8b10"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "3d49fbc5-d98d-4c2f-b230-f0976f25c406"
+  },
+  {
+    "text": "Ending 2",
+    "blockType": "dialogue",
+    "id": "fcc73807-b7ae-4d23-9d4f-da657b62c633"
+  },
+  {
+    "text": "END2",
+    "blockType": "transition",
+    "id": "d73e552f-2a4a-41f8-af06-fbdf95e49aff"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "43640728-97d3-45b3-9ffa-1bda58c286cc"
+  },
+  {
+    "text": "Ending 3",
+    "blockType": "dialogue",
+    "id": "c0a5ec7c-201e-405e-b878-5a9c5461205e"
+  },
+  {
+    "text": "END3",
+    "blockType": "transition",
+    "id": "0725112d-1ee0-40c1-9c29-58cc9c71b0f7"
+  },
+  {
+    "text": "",
+    "blockType": "action",
+    "id": "d65f948d-ff29-42fd-90b0-d5aab635f326"
+  },
+  {
+    "text": "end action",
+    "blockType": "action",
+    "id": "ecd3ecef-a1f0-4893-8161-e9f9a54c7b2c"
+  },
+  {
+    "text": "END1",
+    "blockType": "sceneHeading",
+    "id": "4595d7f7-a8e1-4916-be07-5e5001529a72"
+  },
+  {
+    "text": "Character",
+    "blockType": "character",
+    "id": "648ddb56-73fc-4b78-814c-d7c3bf127f0d"
+  },
+  {
+    "text": "This is the first ending.",
+    "blockType": "dialogue",
+    "id": "7305226c-a7bc-48cd-95e7-8eeaa9eaf388"
+  },
+  {
+    "text": "action",
+    "blockType": "action",
+    "id": "96d6d297-f144-4b7a-9ffc-d9f55b5ff508"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "427b2e59-6e05-45b7-8197-ac809c7a1762"
+  },
+  {
+    "text": "Positive Ending.",
+    "blockType": "dialogue",
+    "id": "07f6e6f8-1d7f-441c-86ba-dfc9c8b11a71"
+  },
+  {
+    "text": "GameOver",
+    "blockType": "transition",
+    "id": "8b913ce2-f13d-44e9-af3e-c5199bd5b2f2"
+  },
+  {
+    "text": "end action",
+    "blockType": "action",
+    "id": "f1a5d997-590b-492d-b18b-26d4f7128add"
+  },
+  {
+    "text": "END2",
+    "blockType": "sceneHeading",
+    "id": "19ffdfe6-de42-4bb0-a19c-5fa63e479c8b"
+  },
+  {
+    "text": "Character",
+    "blockType": "character",
+    "id": "0fd3250c-91aa-4cd2-85d7-574f5a018313"
+  },
+  {
+    "text": "This is the second ending.",
+    "blockType": "dialogue",
+    "id": "d89325d0-7361-4c8b-9717-a8084c60bdb6"
+  },
+  {
+    "text": "action",
+    "blockType": "action",
+    "id": "b64d11fa-c646-45ce-b8d0-0a1015c750af"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "61ba6ed1-a3a7-48f3-9afa-aef0ba373626"
+  },
+  {
+    "text": "Negative Ending.",
+    "blockType": "dialogue",
+    "id": "50719f3f-f7ca-4954-bc30-c51ca58dc8b0"
+  },
+  {
+    "text": "GAMEOVER",
+    "blockType": "transition",
+    "id": "ff5a0c69-c0be-452f-b290-4817e1f5f39a"
+  },
+  {
+    "text": "end action",
+    "blockType": "action",
+    "id": "fd0f5644-c953-4c93-9bf6-f3db476ec3a4"
+  },
+  {
+    "text": "END3",
+    "blockType": "sceneHeading",
+    "id": "259079c2-f284-4d1a-9139-94747a0e52da"
+  },
+  {
+    "text": "Character",
+    "blockType": "character",
+    "id": "0d33404c-2382-4e13-95c9-ebcb78156490"
+  },
+  {
+    "text": "This is the third ending.",
+    "blockType": "dialogue",
+    "id": "f15ff8af-0902-49ee-8870-75f7f768aa88"
+  },
+  {
+    "text": "action",
+    "blockType": "action",
+    "id": "6c297eb2-a7b0-4e55-b645-16ec76f8a3f3"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "5a31a8c5-e01c-47a5-a3de-696a2afa855b"
+  },
+  {
+    "text": "Neutral Ending",
+    "blockType": "dialogue",
+    "id": "86b58746-24f8-479a-9b2a-64359112cf69"
+  },
+  {
+    "text": "GAMEOVER",
+    "blockType": "transition",
+    "id": "0d37c35f-0703-42e5-9789-b4e357df39a7"
+  },
+  {
+    "text": "end action",
+    "blockType": "action",
+    "id": "578dd4b8-75d5-4a51-aa2e-72c81f3add30"
+  },
+  {
+    "text": "GameOver",
+    "blockType": "sceneHeading",
+    "id": "db0464ab-52ea-41bf-8997-126be384968a"
+  },
+  {
+    "text": "Character",
+    "blockType": "character",
+    "id": "201dd555-fb07-4426-846b-1be36a16a33d"
+  },
+  {
+    "text": "Game Over.",
+    "blockType": "dialogue",
+    "id": "8ca254fb-c02c-40a1-9c92-8e70466c31bd"
+  },
+  {
+    "text": "EOF",
+    "blockType": "transition",
+    "id": "6f869f85-a7a9-4eac-86a4-c30ea50b6a8b"
+  },
+  {
+    "text": "EOF",
+    "blockType": "sceneHeading",
+    "id": "8b4aeab2-d3a7-4c6a-a1fc-c86e4d0a6bbe"
+  },
+  {
+    "text": "",
+    "blockType": "action",
+    "id": "02f0f804-8807-43ca-83ea-ca7b4f0062e7"
+  }
+]

@@ -1,0 +1,487 @@
+[
+  {
+    "text": "Start",
+    "blockType": "sceneHeading",
+    "id": "5533bbb6-4fdf-4ffa-af5b-e8180aa4768d"
+  },
+  {
+    "text": " ",
+    "blockType": "character",
+    "id": "a9ee9298-ad4a-498e-93ce-d57c159e0016"
+  },
+  {
+    "text": "Wake up...",
+    "blockType": "dialogue",
+    "id": "809153e3-2cf4-4e4c-ad4c-96f617674692"
+  },
+  {
+    "text": "Punk Girl",
+    "blockType": "character",
+    "id": "04c06b03-b51e-4ed4-a6a7-0b3bc3d6762f"
+  },
+  {
+    "text": "Wake up Aria...",
+    "blockType": "dialogue",
+    "id": "faf67698-f3e9-422b-a926-83f0e4dc717c"
+  },
+  {
+    "text": "Action",
+    "blockType": "character",
+    "id": "d7e27ada-403a-4a6c-b22f-cf3e228e8fb3"
+  },
+  {
+    "text": "This bench is surprisingly comfortable for a gas station rest stop...",
+    "blockType": "dialogue",
+    "id": "c1266123-1ea0-4ea1-bb85-bec7fe6299d8"
+  },
+  {
+    "text": "action",
+    "blockType": "action",
+    "id": "2542d47e-5eb3-406a-8b4f-dbdceef5b255"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "709e4bac-b9f2-47b8-a36f-e91e4f99d033"
+  },
+  {
+    "text": "Ok, I'm up!",
+    "blockType": "dialogue",
+    "id": "9b7425fa-d6c2-4492-acb9-f3be791e273a"
+  },
+  {
+    "text": "WAKEUP",
+    "blockType": "transition",
+    "id": "750d731a-8efd-4350-a052-0859027f8b10"
+  },
+  {
+    "text": "end action",
+    "blockType": "action",
+    "id": "ecd3ecef-a1f0-4893-8161-e9f9a54c7b2c"
+  },
+  {
+    "text": "WAKEUP",
+    "blockType": "sceneHeading",
+    "id": "2d3d3d1f-888a-4df0-8dfc-5dfa47a44e1f"
+  },
+  {
+    "text": "Punk Girl",
+    "blockType": "character",
+    "id": "22fc353f-cda6-42bc-b2e2-308511c4d69b"
+  },
+  {
+    "text": "Ah yes, a nice relaxing nap on a bench is a great (strange?) way to start the day...",
+    "blockType": "dialogue",
+    "id": "8a9c2ae0-f905-481e-8948-9f9ae3cf92f4"
+  },
+  {
+    "text": "left",
+    "blockType": "general",
+    "id": "c448e0e4-490b-4f56-9a5e-818f6322daf9"
+  },
+  {
+    "text": "Action",
+    "blockType": "character",
+    "id": "47b0c06e-8a3a-4d32-80d8-f0c70ce8d856"
+  },
+  {
+    "text": "Ok, so next up on the pizza eating agenda: ",
+    "blockType": "dialogue",
+    "id": "a43ed37b-6946-46b5-ac95-56cad6e64862"
+  },
+  {
+    "text": "left",
+    "blockType": "general",
+    "id": "35001dc6-0f4c-4658-9f28-dda1637b922c"
+  },
+  {
+    "text": "action",
+    "blockType": "action",
+    "id": "80196f90-9be7-404b-8234-91d80eba4be5"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "b45a8e07-554b-4837-8b6e-91c36ba2459f"
+  },
+  {
+    "text": "Where am I?",
+    "blockType": "dialogue",
+    "id": "5b5cfbb2-f807-4f0a-87e9-807fc8ab844c"
+  },
+  {
+    "text": "GOTO_EMPTY",
+    "blockType": "transition",
+    "id": "212c9cde-c8c2-413d-97a4-0996cbc303d4"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "e2149397-72c8-43c5-8747-1785d63e19f1"
+  },
+  {
+    "text": "I know this place...",
+    "blockType": "dialogue",
+    "id": "873e418a-1d14-4894-a9b1-bfc448c814bd"
+  },
+  {
+    "text": "GOTO_EMPTY",
+    "blockType": "transition",
+    "id": "a04298f3-eb02-4051-8541-8ac9914ed90f"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "069637b4-2647-45b6-8aa9-d8fb2267778a"
+  },
+  {
+    "text": "How did I get here?",
+    "blockType": "dialogue",
+    "id": "56304d1b-11d3-4726-b161-4c2348490491"
+  },
+  {
+    "text": "GOTO_EMPTY",
+    "blockType": "transition",
+    "id": "f0d1468d-715d-4dc2-a19b-0881c46151a1"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "62b9d0e4-731f-4406-ba19-b4a09f15aa91"
+  },
+  {
+    "text": "Let's find my way home.",
+    "blockType": "dialogue",
+    "id": "cd790619-0933-42b9-84ad-7d2588637799"
+  },
+  {
+    "text": "GOTO_EMPTY",
+    "blockType": "transition",
+    "id": "7e0a04b4-a63f-4064-9f86-726919e04f62"
+  },
+  {
+    "text": "end action",
+    "blockType": "action",
+    "id": "772463df-c38b-4e53-8cba-5e483cedcc48"
+  },
+  {
+    "text": "GOTO_EMPTY",
+    "blockType": "sceneHeading",
+    "id": "d6641bda-a80a-474c-bdc1-8b9a15631221"
+  },
+  {
+    "text": "Punk Girl",
+    "blockType": "character",
+    "id": "b361f6e5-642d-4dcc-9ea6-fd3688d4dd0e"
+  },
+  {
+    "text": "<this is a placeholder character entry, if you have arrived here, a previous entry is empty>",
+    "blockType": "dialogue",
+    "id": "ef7b343c-fce9-4425-8fe0-09a5ababc319"
+  },
+  {
+    "text": "Action",
+    "blockType": "character",
+    "id": "842c77cc-43eb-4083-90c5-8b47cca8f969"
+  },
+  {
+    "text": "<this is a placeholder action entry, if you have arrived here, a previous entry hasn't been filled in>",
+    "blockType": "dialogue",
+    "id": "4fdcdf79-c9df-4ccc-bb23-f3caeb26ad9d"
+  },
+  {
+    "text": "action",
+    "blockType": "action",
+    "id": "ac5a4bff-2298-4198-9ccf-8af662c22a1a"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "0791b2fa-74c2-4638-9d22-3bfdafd1d8bd"
+  },
+  {
+    "text": "<back to start>",
+    "blockType": "dialogue",
+    "id": "071f0e3e-2f65-4578-b3a1-c9da446de469"
+  },
+  {
+    "text": "Start",
+    "blockType": "transition",
+    "id": "babb2883-b857-4cdc-b003-6250c52dbb24"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "77a7e421-3f1d-47cd-831a-039cb97f2e19"
+  },
+  {
+    "text": "<back to wakeup>",
+    "blockType": "dialogue",
+    "id": "010fa3d9-51aa-45b8-b9a0-43c7e54f0bfa"
+  },
+  {
+    "text": "WAKEUP",
+    "blockType": "transition",
+    "id": "ee6489ff-4be4-46b4-9459-581db6075eda"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "5c93a985-a63e-4d1f-869d-474db4308f90"
+  },
+  {
+    "text": "<go to ending 1>",
+    "blockType": "dialogue",
+    "id": "d859908b-2f76-41d5-987b-a871134ccbdd"
+  },
+  {
+    "text": "ENDING1",
+    "blockType": "transition",
+    "id": "fda3e71e-a509-4563-a888-0f3e2aec5f2b"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "53ae08c0-05e8-44a0-a1ae-4d29fe501aec"
+  },
+  {
+    "text": "<go to ending 2>",
+    "blockType": "dialogue",
+    "id": "56938b4e-2906-4fda-9231-2715ff4ebf8f"
+  },
+  {
+    "text": "ENDING2",
+    "blockType": "transition",
+    "id": "0133d72f-f773-433f-9eb6-f60947f6f7a6"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "0cc11c49-a0db-4773-a59d-c110747ee672"
+  },
+  {
+    "text": "<go to ending 3>",
+    "blockType": "dialogue",
+    "id": "965353a2-5b9c-40b2-8503-6ee578043003"
+  },
+  {
+    "text": "ENDING3",
+    "blockType": "transition",
+    "id": "216d9ebf-a0b6-40da-a617-95c846d7740d"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "2cba5256-ecdf-49ec-b601-1719512fca43"
+  },
+  {
+    "text": "<go to ending 4>",
+    "blockType": "dialogue",
+    "id": "f10648d6-85af-4e9b-b2ae-f05e1b04913e"
+  },
+  {
+    "text": "ENDING4",
+    "blockType": "transition",
+    "id": "6f964849-a973-4ecc-b47c-c3a4ed559c55"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "ae42e391-e453-4c25-92d4-ce53b96b3512"
+  },
+  {
+    "text": "<back to this entry>",
+    "blockType": "dialogue",
+    "id": "4927762e-ae5b-454a-a6d2-7641ba89130b"
+  },
+  {
+    "text": "GOTO_EMPTY",
+    "blockType": "transition",
+    "id": "a0a2a63f-70fa-4851-aaa2-69e4ef0c0ef0"
+  },
+  {
+    "text": "end action",
+    "blockType": "action",
+    "id": "3a0ebe60-b879-4928-adaf-4f8644dad888"
+  },
+  {
+    "text": "ENDING1",
+    "blockType": "sceneHeading",
+    "id": "60cfbef2-5fd8-44c4-b453-d46a60d7b650"
+  },
+  {
+    "text": "Ending",
+    "blockType": "character",
+    "id": "f15ff8af-0902-49ee-8870-75f7f768aa88"
+  },
+  {
+    "text": "This is the first ending.",
+    "blockType": "dialogue",
+    "id": "a1494726-510c-455f-9c5f-794affd1a923"
+  },
+  {
+    "text": "action",
+    "blockType": "action",
+    "id": "6c297eb2-a7b0-4e55-b645-16ec76f8a3f3"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "5a31a8c5-e01c-47a5-a3de-696a2afa855b"
+  },
+  {
+    "text": "You find your way back home",
+    "blockType": "dialogue",
+    "id": "86b58746-24f8-479a-9b2a-64359112cf69"
+  },
+  {
+    "text": "GAMEOVER",
+    "blockType": "transition",
+    "id": "0d37c35f-0703-42e5-9789-b4e357df39a7"
+  },
+  {
+    "text": "end action",
+    "blockType": "action",
+    "id": "578dd4b8-75d5-4a51-aa2e-72c81f3add30"
+  },
+  {
+    "text": "ENDING2",
+    "blockType": "sceneHeading",
+    "id": "4f91056e-f79b-4715-a35c-cd2c5543bc3f"
+  },
+  {
+    "text": "Ending",
+    "blockType": "character",
+    "id": "2c0d943b-06f6-43f7-a794-bb29073d721d"
+  },
+  {
+    "text": "This is the second ending.",
+    "blockType": "dialogue",
+    "id": "7ad9531b-ede5-47d6-a2fa-a75dbe5dbc0d"
+  },
+  {
+    "text": "action",
+    "blockType": "action",
+    "id": "6e8f52df-47fa-463f-9d3b-7765c7dbf0ef"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "ac491b51-7c79-424a-b43b-045664e5f5dd"
+  },
+  {
+    "text": "You find a new place",
+    "blockType": "dialogue",
+    "id": "7acad009-22a7-4a57-98bf-c108b5ea51c1"
+  },
+  {
+    "text": "GAMEOVER",
+    "blockType": "transition",
+    "id": "22495e0e-51ff-4c19-8a27-45349638b0cb"
+  },
+  {
+    "text": "end action",
+    "blockType": "action",
+    "id": "48619d8e-6fbf-4c3c-ac5c-8e701b237c74"
+  },
+  {
+    "text": "ENDING3",
+    "blockType": "sceneHeading",
+    "id": "e53c2e9b-ea07-4d0a-b436-701d8913f77d"
+  },
+  {
+    "text": "Ending",
+    "blockType": "character",
+    "id": "c61fdfdd-269e-47c3-a839-59a502713f39"
+  },
+  {
+    "text": "This is the third ending.",
+    "blockType": "dialogue",
+    "id": "ad39478e-44fc-4838-9100-f7770b4bb85c"
+  },
+  {
+    "text": "action",
+    "blockType": "action",
+    "id": "291edc75-329e-4842-826a-2b374c78e4f6"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "32373e05-005c-4b8b-929b-818d991bc6cf"
+  },
+  {
+    "text": "You return to where you started",
+    "blockType": "dialogue",
+    "id": "ef6021b7-8d1d-45e0-a2b0-27cf430dcd01"
+  },
+  {
+    "text": "GAMEOVER",
+    "blockType": "transition",
+    "id": "bcf3dc4c-6d1e-4850-8f0e-7da9c024fb79"
+  },
+  {
+    "text": "end action",
+    "blockType": "action",
+    "id": "308eed83-5403-4d2d-924c-e3485e9f320b"
+  },
+  {
+    "text": "ENDING4",
+    "blockType": "sceneHeading",
+    "id": "0504c051-32c3-4e82-93c1-646df20980c7"
+  },
+  {
+    "text": "Ending",
+    "blockType": "character",
+    "id": "5fc28bbe-86d4-4aef-9fff-2a801ed41b5d"
+  },
+  {
+    "text": "This is the fourth ending.",
+    "blockType": "dialogue",
+    "id": "9c9f600f-212f-4182-8707-f88bb597cd4e"
+  },
+  {
+    "text": "action",
+    "blockType": "action",
+    "id": "af752218-4e34-4a8c-a34f-984c12921ca4"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "24400b0b-c64b-4266-97e0-226fc60d4155"
+  },
+  {
+    "text": "You remain lost",
+    "blockType": "dialogue",
+    "id": "955816fd-a967-4163-b9ca-8ccd0a631ab9"
+  },
+  {
+    "text": "GAMEOVER",
+    "blockType": "transition",
+    "id": "f3cdb6cc-0771-49d8-ab47-493046c14067"
+  },
+  {
+    "text": "end action",
+    "blockType": "action",
+    "id": "f861f825-beba-4145-a60a-e3736a40ba72"
+  },
+  {
+    "text": "GAMEOVER",
+    "blockType": "sceneHeading",
+    "id": "90e7aba5-4d33-46d7-af63-f1bc202eb1fa"
+  },
+  {
+    "text": "Game Over.",
+    "blockType": "dialogue",
+    "id": "45d041e2-ace1-4fac-a33e-68571f68f13a"
+  },
+  {
+    "text": "EOF",
+    "blockType": "transition",
+    "id": "c7b3d046-8392-40a9-9669-2c9a20168035"
+  },
+  {
+    "text": "EOF",
+    "blockType": "sceneHeading",
+    "id": "4b8ed8c0-5ffe-4016-ac13-d8952b0030e5"
+  }
+]

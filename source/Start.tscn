@@ -1,0 +1,126 @@
+[gd_scene load_steps=10 format=3 uid="uid://dmwg2trd6wv7c"]
+
+[ext_resource type="Script" path="res://source/scripts/Start.gd" id="1_5yld0"]
+[ext_resource type="Texture2D" uid="uid://cw4f6stlroc7c" path="res://assets/art/startscreen_9pm.png" id="2_16hn5"]
+[ext_resource type="Texture2D" uid="uid://dr7aci5ny2a0g" path="res://assets/art/startscreen_bg_9pm.png" id="3_5m50p"]
+[ext_resource type="Theme" uid="uid://ciw62x4gmq5wj" path="res://assets/themes/font_theme_amatic.tres" id="4_dd0fd"]
+[ext_resource type="Theme" uid="uid://bsql4bg6crqbs" path="res://assets/themes/button_theme_blue_light.tres" id="4_dnlfx"]
+[ext_resource type="Texture2D" uid="uid://poyvht0rbyhr" path="res://assets/art/spritesheet_v01_5pm.png" id="5_fkx2t"]
+[ext_resource type="Theme" uid="uid://bsdi55gxg2x2" path="res://assets/themes/font_theme_indie.tres" id="6_iggxm"]
+[ext_resource type="StyleBox" uid="uid://bjjs87buslrdx" path="res://assets/themes/style_box_flat_blue_light.tres" id="6_r0cep"]
+
+[sub_resource type="Theme" id="Theme_6pthd"]
+
+[node name="Start" type="Node2D"]
+script = ExtResource("1_5yld0")
+
+[node name="Background" type="Panel" parent="."]
+offset_right = 1152.0
+offset_bottom = 648.0
+metadata/_edit_lock_ = true
+
+[node name="TextureRect1" type="TextureRect" parent="."]
+offset_right = 2304.0
+offset_bottom = 1296.0
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_16hn5")
+metadata/_edit_lock_ = true
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+offset_right = 2304.0
+offset_bottom = 1296.0
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_5m50p")
+metadata/_edit_lock_ = true
+
+[node name="Title" type="Label" parent="."]
+visible = false
+offset_left = 280.0
+offset_top = 82.0
+offset_right = 883.0
+offset_bottom = 160.0
+theme_override_font_sizes/font_size = 50
+text = "The Long Road"
+horizontal_alignment = 1
+
+[node name="NewGame" type="Button" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 485.0
+offset_top = 480.0
+offset_right = 658.0
+offset_bottom = 534.0
+focus_mode = 0
+
+[node name="CreatedBy" type="RichTextLabel" parent="."]
+offset_left = 904.0
+offset_top = 415.0
+offset_right = 1141.0
+offset_bottom = 468.0
+theme = ExtResource("4_dd0fd")
+bbcode_enabled = true
+text = "[center]Created By: "
+scroll_active = false
+
+[node name="Names" type="RichTextLabel" parent="."]
+offset_left = 915.0
+offset_top = 485.0
+offset_right = 1114.0
+offset_bottom = 631.0
+theme = ExtResource("4_dd0fd")
+theme_override_constants/line_separation = -6
+bbcode_enabled = true
+text = "[center]Jamie Parreno
+&
+Stephen Frister"
+scroll_active = false
+
+[node name="Sound" type="Button" parent="."]
+offset_left = 15.0
+offset_top = 595.0
+offset_right = 72.0
+offset_bottom = 652.0
+scale = Vector2(0.7, 0.7)
+focus_mode = 0
+theme = ExtResource("4_dnlfx")
+
+[node name="Volume" type="Label" parent="Sound"]
+layout_mode = 0
+offset_left = 252.857
+offset_top = 1.42855
+offset_right = 292.857
+offset_bottom = 60.4286
+theme = ExtResource("6_iggxm")
+text = "50
+"
+horizontal_alignment = 1
+
+[node name="Slider" type="HSlider" parent="Sound"]
+layout_mode = 0
+offset_left = 67.0
+offset_top = 13.0
+offset_right = 241.0
+offset_bottom = 45.0
+theme = SubResource("Theme_6pthd")
+theme_override_styles/slider = ExtResource("6_r0cep")
+theme_override_styles/grabber_area = ExtResource("6_r0cep")
+theme_override_styles/grabber_area_highlight = ExtResource("6_r0cep")
+value = 50.0
+
+[node name="Off" type="Sprite2D" parent="Sound"]
+position = Vector2(28.5714, 28.5714)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("5_fkx2t")
+region_enabled = true
+region_rect = Rect2(1743.04, 934.378, 70.1598, 70.1611)
+metadata/_edit_lock_ = true
+
+[node name="On" type="Sprite2D" parent="Sound"]
+position = Vector2(28.5714, 27.8572)
+scale = Vector2(1.16071, 0.876624)
+texture = ExtResource("5_fkx2t")
+region_enabled = true
+region_rect = Rect2(1755.56, 944.918, 32.6893, 44.3187)
+
+[connection signal="pressed" from="NewGame" to="." method="_on_new_game_pressed"]
+[connection signal="pressed" from="Sound" to="." method="_on_sound_pressed"]
+[connection signal="value_changed" from="Sound/Slider" to="." method="_on_volume_value_changed"]
