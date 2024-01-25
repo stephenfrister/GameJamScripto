@@ -38,7 +38,7 @@ func _process(_delta):
 		story_started = true
 		
 		#TODO: something here to start the story...
-		print_debug("story start...")
+		#print_debug("story start...")
 		_on_select_scenario( "story" )
 		
 	
@@ -46,7 +46,7 @@ func _process(_delta):
 		story_started = false
 		
 		#TODO: clear any necessary story variables...
-		print_debug("story end...")
+		#print_debug("story end...")
 	
 	if dialogue_panel.visible_ratio < 1 && text_next < Time.get_ticks_msec(): 
 		text_next = Time.get_ticks_msec() + text_speed
@@ -81,7 +81,8 @@ func _on_select_scenario( type ):
 	elif type == "simple": parser.scenario_selected = parser.TEST_DECISION
 	elif type == "ending": parser.scenario_selected = parser.TEST_ENDINGS
 	else: 
-		print_debug( "type not found: " + str(type) )
+		#print_debug( "type not found: " + str(type) )
+		pass
 	
 	_on_start_pressed()
 	
@@ -244,8 +245,8 @@ func set_dialogue_popout( value ):
 	pass
 
 func select_action_item( item ): 
-	print_debug("create_action_list...")
-	print(item)
+	#print_debug("create_action_list...")
+	#print(item)
 	
 	dialogue_panel.visible_ratio = 1
 	
