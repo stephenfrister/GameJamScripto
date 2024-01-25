@@ -112,6 +112,21 @@
   {
     "text": "(answer)",
     "blockType": "parenthetical",
+    "id": "62b9d0e4-731f-4406-ba19-b4a09f15aa91"
+  },
+  {
+    "text": "Let's find my way home.",
+    "blockType": "dialogue",
+    "id": "cd790619-0933-42b9-84ad-7d2588637799"
+  },
+  {
+    "text": "GOTO_GOHOME",
+    "blockType": "transition",
+    "id": "7e0a04b4-a63f-4064-9f86-726919e04f62"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
     "id": "b45a8e07-554b-4837-8b6e-91c36ba2459f"
   },
   {
@@ -153,21 +168,6 @@
     "text": "GOTO_HEREHOW",
     "blockType": "transition",
     "id": "f0d1468d-715d-4dc2-a19b-0881c46151a1"
-  },
-  {
-    "text": "(answer)",
-    "blockType": "parenthetical",
-    "id": "62b9d0e4-731f-4406-ba19-b4a09f15aa91"
-  },
-  {
-    "text": "Let's find my way home.",
-    "blockType": "dialogue",
-    "id": "cd790619-0933-42b9-84ad-7d2588637799"
-  },
-  {
-    "text": "GOTO_GOHOME",
-    "blockType": "transition",
-    "id": "7e0a04b4-a63f-4064-9f86-726919e04f62"
   },
   {
     "text": "end action",
@@ -1815,7 +1815,7 @@
     "id": "b9be3cba-5930-46f8-aef7-8539bdf52226"
   },
   {
-    "text": "Make a phone call. (todo)",
+    "text": "Make a phone call.",
     "blockType": "dialogue",
     "id": "9ba71dbf-7773-46a8-bcf1-79c278b1936e"
   },

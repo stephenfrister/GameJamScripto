@@ -112,6 +112,8 @@ func _on_start_pressed():
 func _on_next_pressed():
 	#print_debug("_on_next_pressed...")
 	
+	$Dialogue/Instruction.visible = false
+	
 	if dialogue_panel.visible_ratio < 1: 
 		dialogue_panel.visible_ratio = 1
 		
@@ -187,8 +189,12 @@ func _on_show_character( character ):
 	
 	if character == "Trinity"  : $Companion/Trinity.visible = !$Companion/Trinity.visible   # rabbit
 	if character == "Stranger" : $Companion/Crow.visible    = !$Companion/Crow.visible      # crow
-	if character == "Evil"     : $Companion/Evil.visible    = !$Companion/Evil.visible      # invert
 	if character == "Alien"    : $Companion/Person.visible  = !$Companion/Person.visible    # alien
+	if character == "Evil"     : $Companion/Evil.visible    = !$Companion/Evil.visible      # invert
+	
+	$Companion/Trin.visible = $Companion/Trinity.visible
+	$Companion/Shop.visible = $Companion/Person.visible
+	$Companion/Ranger.visible = $Companion/Crow.visible 
 	
 	pass
 
@@ -388,11 +394,7 @@ func set_theme_3():
 	set_theme( "res://assets/themes/style_box_flat_purple_light.tres" )
 	Data.setting_theme = "red"
 	
-	print_debug(Data.setting_theme)
-	
 	pass
-
-
 
 
 # for testing...

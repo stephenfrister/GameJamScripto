@@ -75,6 +75,18 @@ offset_bottom = 648.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_pi5qg")
 metadata/_edit_lock_ = true
 
+[node name="Finish" type="Button" parent="."]
+offset_left = 996.0
+offset_top = 575.0
+offset_right = 1139.0
+offset_bottom = 636.0
+focus_mode = 0
+theme_override_fonts/font = ExtResource("15_763l6")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = ExtResource("5_bcmf5")
+theme_override_styles/hover = ExtResource("5_x38da")
+text = "End Game"
+
 [node name="Sound" type="Node2D" parent="."]
 
 [node name="Label" type="Label" parent="Sound"]
@@ -351,6 +363,15 @@ offset_bottom = 248.0
 focus_mode = 0
 mouse_filter = 1
 
+[node name="Instruction" type="Label" parent="Dialogue"]
+offset_left = 493.0
+offset_top = 142.0
+offset_right = 677.0
+offset_bottom = 187.0
+theme = ExtResource("11_fwc78")
+text = "Click to Continue"
+horizontal_alignment = 1
+
 [node name="Inventory" type="Node2D" parent="."]
 visible = false
 
@@ -406,6 +427,36 @@ texture = ExtResource("9_m2kyw")
 
 [node name="Companion" type="Node2D" parent="."]
 
+[node name="Shop" type="Label" parent="Companion"]
+visible = false
+offset_left = 857.0
+offset_top = 26.0
+offset_right = 1137.0
+offset_bottom = 71.0
+theme = ExtResource("11_fwc78")
+text = "Al"
+horizontal_alignment = 1
+
+[node name="Trin" type="Label" parent="Companion"]
+visible = false
+offset_left = 857.0
+offset_top = 26.0
+offset_right = 1137.0
+offset_bottom = 71.0
+theme = ExtResource("11_fwc78")
+text = "Trin"
+horizontal_alignment = 1
+
+[node name="Ranger" type="Label" parent="Companion"]
+visible = false
+offset_left = 857.0
+offset_top = 26.0
+offset_right = 1137.0
+offset_bottom = 71.0
+theme = ExtResource("11_fwc78")
+text = "Ranger"
+horizontal_alignment = 1
+
 [node name="Panel" type="Panel" parent="Companion"]
 offset_left = 852.0
 offset_top = 78.0
@@ -446,463 +497,64 @@ region_rect = Rect2(1288.91, 140.564, 529.124, 853.342)
 [node name="Test" type="Node2D" parent="."]
 
 [node name="Start" type="Button" parent="Test"]
-offset_left = 1051.0
-offset_top = 11.0
-offset_right = 1138.0
-offset_bottom = 65.0
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 1106.0
+offset_top = 10.0
+offset_right = 1193.0
+offset_bottom = 64.0
 focus_mode = 0
 text = "Test 
 Restart"
 
-[node name="Finish" type="Button" parent="Test"]
-offset_left = 996.0
-offset_top = 575.0
-offset_right = 1139.0
-offset_bottom = 636.0
-focus_mode = 0
-theme_override_fonts/font = ExtResource("15_763l6")
-theme_override_font_sizes/font_size = 40
-theme_override_styles/normal = ExtResource("5_bcmf5")
-theme_override_styles/hover = ExtResource("5_x38da")
-text = "End Game"
-
 [node name="Button" type="Button" parent="Test"]
-visible = false
-offset_left = 860.0
-offset_top = 384.0
-offset_right = 947.0
-offset_bottom = 415.0
+offset_left = 1252.0
+offset_top = 446.0
+offset_right = 1339.0
+offset_bottom = 477.0
 focus_mode = 0
 
 [node name="Story" type="Button" parent="Test"]
-visible = false
-offset_left = 860.0
-offset_top = 418.0
-offset_right = 947.0
-offset_bottom = 449.0
+offset_left = 1252.0
+offset_top = 480.0
+offset_right = 1339.0
+offset_bottom = 511.0
 focus_mode = 0
 text = "Story"
 
 [node name="Road" type="Button" parent="Test"]
-visible = false
-offset_left = 860.0
-offset_top = 486.0
-offset_right = 947.0
-offset_bottom = 517.0
+offset_left = 1252.0
+offset_top = 548.0
+offset_right = 1339.0
+offset_bottom = 579.0
 focus_mode = 0
 text = "Test Road"
 
 [node name="Simple" type="Button" parent="Test"]
-visible = false
-offset_left = 860.0
-offset_top = 520.0
-offset_right = 947.0
-offset_bottom = 551.0
+offset_left = 1252.0
+offset_top = 582.0
+offset_right = 1339.0
+offset_bottom = 613.0
 focus_mode = 0
 text = "Simple"
 
 [node name="Endings" type="Button" parent="Test"]
-visible = false
-offset_left = 860.0
-offset_top = 452.0
-offset_right = 947.0
-offset_bottom = 483.0
+offset_left = 1252.0
+offset_top = 514.0
+offset_right = 1339.0
+offset_bottom = 545.0
 focus_mode = 0
 text = "Endings"
 
-[node name="_archive" type="Node2D" parent="."]
-
-[node name="Level_End" type="Node2D" parent="_archive"]
-visible = false
-
-[node name="Defeat" type="Panel" parent="_archive/Level_End"]
-offset_left = 410.0
-offset_top = 72.0
-offset_right = 500.0
-offset_bottom = 147.0
-
-[node name="Unknown" type="Panel" parent="_archive/Level_End"]
-offset_left = 514.0
-offset_top = 73.0
-offset_right = 604.0
-offset_bottom = 148.0
-
-[node name="Success" type="Panel" parent="_archive/Level_End"]
-offset_left = 616.0
-offset_top = 73.0
-offset_right = 706.0
-offset_bottom = 148.0
-
-[node name="Level_3" type="Node2D" parent="_archive"]
-visible = false
-
-[node name="Dialog1" type="Panel" parent="_archive/Level_3"]
-offset_left = 409.0
-offset_top = 155.0
-offset_right = 479.0
-offset_bottom = 225.0
-
-[node name="Dialog2" type="Panel" parent="_archive/Level_3"]
-offset_left = 485.0
-offset_top = 155.0
-offset_right = 555.0
-offset_bottom = 225.0
-
-[node name="Dialog3" type="Panel" parent="_archive/Level_3"]
-offset_left = 561.0
-offset_top = 155.0
-offset_right = 631.0
-offset_bottom = 225.0
-
-[node name="Dialog4" type="Panel" parent="_archive/Level_3"]
-offset_left = 637.0
-offset_top = 154.0
-offset_right = 707.0
-offset_bottom = 224.0
-
-[node name="Button1" type="Button" parent="_archive/Level_3"]
-offset_left = 410.0
-offset_top = 156.0
-offset_right = 478.0
-offset_bottom = 224.0
-text = "1"
-
-[node name="Button2" type="Button" parent="_archive/Level_3"]
-offset_left = 486.0
-offset_top = 156.0
-offset_right = 554.0
-offset_bottom = 224.0
-text = "2"
-
-[node name="Button3" type="Button" parent="_archive/Level_3"]
-offset_left = 562.0
-offset_top = 156.0
-offset_right = 630.0
-offset_bottom = 224.0
-text = "3"
-
-[node name="Button4" type="Button" parent="_archive/Level_3"]
-offset_left = 638.0
-offset_top = 156.0
-offset_right = 706.0
-offset_bottom = 224.0
-text = "4"
-
-[node name="Level_2" type="Node2D" parent="_archive"]
-visible = false
-
-[node name="Dialog1" type="Panel" parent="_archive/Level_2"]
-offset_left = 409.0
-offset_top = 230.0
-offset_right = 479.0
-offset_bottom = 300.0
-
-[node name="Dialog2" type="Panel" parent="_archive/Level_2"]
-offset_left = 485.0
-offset_top = 230.0
-offset_right = 555.0
-offset_bottom = 300.0
-
-[node name="Dialog3" type="Panel" parent="_archive/Level_2"]
-offset_left = 561.0
-offset_top = 230.0
-offset_right = 631.0
-offset_bottom = 300.0
-
-[node name="Dialog4" type="Panel" parent="_archive/Level_2"]
-offset_left = 637.0
-offset_top = 230.0
-offset_right = 707.0
-offset_bottom = 300.0
-
-[node name="Button1" type="Button" parent="_archive/Level_2"]
-offset_left = 410.0
-offset_top = 231.0
-offset_right = 478.0
-offset_bottom = 299.0
-text = "1"
-
-[node name="Button2" type="Button" parent="_archive/Level_2"]
-offset_left = 486.0
-offset_top = 231.0
-offset_right = 554.0
-offset_bottom = 299.0
-text = "2"
-
-[node name="Button3" type="Button" parent="_archive/Level_2"]
-offset_left = 562.0
-offset_top = 231.0
-offset_right = 630.0
-offset_bottom = 299.0
-text = "3"
-
-[node name="Button4" type="Button" parent="_archive/Level_2"]
-offset_left = 638.0
-offset_top = 231.0
-offset_right = 706.0
-offset_bottom = 299.0
-text = "4"
-
-[node name="Level_1" type="Node2D" parent="_archive"]
-visible = false
-
-[node name="Dialog1" type="Panel" parent="_archive/Level_1"]
-offset_left = 409.0
-offset_top = 305.0
-offset_right = 479.0
-offset_bottom = 375.0
-
-[node name="Dialog2" type="Panel" parent="_archive/Level_1"]
-offset_left = 485.0
-offset_top = 305.0
-offset_right = 555.0
-offset_bottom = 375.0
-
-[node name="Dialog3" type="Panel" parent="_archive/Level_1"]
-offset_left = 561.0
-offset_top = 305.0
-offset_right = 631.0
-offset_bottom = 375.0
-
-[node name="Dialog4" type="Panel" parent="_archive/Level_1"]
-offset_left = 637.0
-offset_top = 305.0
-offset_right = 707.0
-offset_bottom = 375.0
-
-[node name="Button1" type="Button" parent="_archive/Level_1"]
-offset_left = 410.0
-offset_top = 306.0
-offset_right = 478.0
-offset_bottom = 374.0
-text = "1"
-
-[node name="Button2" type="Button" parent="_archive/Level_1"]
-offset_left = 486.0
-offset_top = 306.0
-offset_right = 554.0
-offset_bottom = 374.0
-text = "2"
-
-[node name="Button3" type="Button" parent="_archive/Level_1"]
-offset_left = 562.0
-offset_top = 306.0
-offset_right = 630.0
-offset_bottom = 374.0
-text = "3"
-
-[node name="Button4" type="Button" parent="_archive/Level_1"]
-offset_left = 638.0
-offset_top = 306.0
-offset_right = 706.0
-offset_bottom = 374.0
-text = "4"
-
-[node name="Level_0" type="Node2D" parent="_archive"]
-visible = false
-
-[node name="Dialog1" type="Panel" parent="_archive/Level_0"]
-offset_left = 409.0
-offset_top = 380.0
-offset_right = 479.0
-offset_bottom = 450.0
-
-[node name="Dialog2" type="Panel" parent="_archive/Level_0"]
-offset_left = 485.0
-offset_top = 380.0
-offset_right = 555.0
-offset_bottom = 450.0
-
-[node name="Dialog3" type="Panel" parent="_archive/Level_0"]
-offset_left = 561.0
-offset_top = 380.0
-offset_right = 631.0
-offset_bottom = 450.0
-
-[node name="Dialog4" type="Panel" parent="_archive/Level_0"]
-offset_left = 637.0
-offset_top = 380.0
-offset_right = 707.0
-offset_bottom = 450.0
-
-[node name="Button1" type="Button" parent="_archive/Level_0"]
-offset_left = 410.0
-offset_top = 381.0
-offset_right = 478.0
-offset_bottom = 449.0
-text = "1"
-
-[node name="Button2" type="Button" parent="_archive/Level_0"]
-offset_left = 486.0
-offset_top = 381.0
-offset_right = 554.0
-offset_bottom = 449.0
-text = "2"
-
-[node name="Button3" type="Button" parent="_archive/Level_0"]
-offset_left = 562.0
-offset_top = 381.0
-offset_right = 630.0
-offset_bottom = 449.0
-text = "3"
-
-[node name="Button4" type="Button" parent="_archive/Level_0"]
-offset_left = 638.0
-offset_top = 381.0
-offset_right = 706.0
-offset_bottom = 449.0
-text = "4"
-
-[node name="Mentor" type="Node2D" parent="_archive"]
-visible = false
-
-[node name="Panel" type="Panel" parent="_archive/Mentor"]
-offset_left = 837.0
-offset_top = 103.0
-offset_right = 1138.0
-offset_bottom = 532.0
-metadata/_edit_use_anchors_ = true
-
-[node name="Node" type="Node2D" parent="_archive/Mentor"]
-visible = false
-
-[node name="Label" type="Label" parent="_archive/Mentor/Node"]
-offset_left = 964.0
-offset_top = -1.0
-offset_right = 1044.0
-offset_bottom = 22.0
-text = "Aspect"
-metadata/_edit_use_anchors_ = true
-
-[node name="Supports" type="Panel" parent="_archive/Mentor/Node"]
-offset_left = 836.0
-offset_top = 30.0
-offset_right = 907.0
-offset_bottom = 94.0
-metadata/_edit_use_anchors_ = true
-
-[node name="Neutral" type="Panel" parent="_archive/Mentor/Node"]
-offset_left = 955.0
-offset_top = 29.0
-offset_right = 1026.0
-offset_bottom = 93.0
-metadata/_edit_use_anchors_ = true
-
-[node name="Against" type="Panel" parent="_archive/Mentor/Node"]
-offset_left = 1060.0
-offset_top = 29.0
-offset_right = 1131.0
-offset_bottom = 93.0
-metadata/_edit_use_anchors_ = true
-
-[node name="Label" type="Label" parent="_archive/Mentor"]
-offset_left = 964.0
-offset_top = 111.0
-offset_right = 1022.0
-offset_bottom = 134.0
-text = "Mentor"
-metadata/_edit_use_anchors_ = true
-
-[node name="Character" type="Node2D" parent="_archive"]
-visible = false
-
-[node name="Panel" type="Panel" parent="_archive/Character"]
-offset_left = 10.0
-offset_top = 10.0
-offset_right = 320.0
-offset_bottom = 636.0
-
-[node name="TextureRect" type="TextureRect" parent="_archive/Character"]
-visible = false
-offset_left = 39.0
-offset_top = 153.0
-offset_right = 279.0
-offset_bottom = 393.0
-metadata/_edit_use_anchors_ = true
-
-[node name="Alignment" type="Node2D" parent="_archive/Character"]
-visible = false
-
-[node name="Good" type="Panel" parent="_archive/Character/Alignment"]
-offset_left = 16.0
-offset_top = 40.0
-offset_right = 87.0
-offset_bottom = 104.0
-metadata/_edit_use_anchors_ = true
-
-[node name="Neutral" type="Panel" parent="_archive/Character/Alignment"]
-offset_left = 135.0
-offset_top = 39.0
-offset_right = 206.0
-offset_bottom = 103.0
-metadata/_edit_use_anchors_ = true
-
-[node name="Evil" type="Panel" parent="_archive/Character/Alignment"]
-offset_left = 240.0
-offset_top = 39.0
-offset_right = 311.0
-offset_bottom = 103.0
-metadata/_edit_use_anchors_ = true
-
-[node name="Label" type="Label" parent="_archive/Character/Alignment"]
-offset_left = 130.0
-offset_top = 6.0
-offset_right = 210.0
-offset_bottom = 29.0
-text = "Alignment"
-metadata/_edit_use_anchors_ = true
-
-[node name="Artifact" type="Node2D" parent="_archive/Character"]
-visible = false
-position = Vector2(-1, 537)
-
-[node name="Weak" type="Panel" parent="_archive/Character/Artifact"]
-offset_left = 15.0
-offset_top = 37.0
-offset_right = 86.0
-offset_bottom = 101.0
-metadata/_edit_use_anchors_ = true
-
-[node name="Medium" type="Panel" parent="_archive/Character/Artifact"]
-offset_left = 135.0
-offset_top = 39.0
-offset_right = 206.0
-offset_bottom = 103.0
-metadata/_edit_use_anchors_ = true
-
-[node name="Strong" type="Panel" parent="_archive/Character/Artifact"]
-offset_left = 240.0
-offset_top = 39.0
-offset_right = 311.0
-offset_bottom = 103.0
-metadata/_edit_use_anchors_ = true
-
-[node name="Label" type="Label" parent="_archive/Character/Artifact"]
-offset_left = 140.0
-offset_top = 12.0
-offset_right = 217.0
-offset_bottom = 35.0
-text = "Artifact"
-metadata/_edit_use_anchors_ = true
-
-[node name="Label" type="Label" parent="_archive/Character"]
-offset_left = 119.0
-offset_top = 17.0
-offset_right = 196.0
-offset_bottom = 40.0
-text = "Character"
-metadata/_edit_use_anchors_ = true
-
-[node name="Button" type="Button" parent="."]
-visible = false
-offset_left = 855.0
-offset_top = 11.0
-offset_right = 942.0
-offset_bottom = 65.0
+[node name="Toggle" type="Button" parent="Test"]
+offset_left = 1253.0
+offset_top = 363.0
+offset_right = 1340.0
+offset_bottom = 417.0
 focus_mode = 0
 text = "Toggle 
 Evil Twin"
 
+[connection signal="pressed" from="Finish" to="." method="_on_finish_pressed"]
 [connection signal="pressed" from="Sound/Sunshine" to="." method="_on_sound_pressed" binds= ["sunshine"]]
 [connection signal="pressed" from="Sound/Mystery" to="." method="_on_sound_pressed" binds= ["mystery"]]
 [connection signal="pressed" from="Sound/Mute" to="." method="_on_sound_pressed" binds= ["mute"]]
@@ -914,10 +566,9 @@ Evil Twin"
 [connection signal="pressed" from="Dialogue/Forward" to="." method="_on_next_pressed"]
 [connection signal="pressed" from="Dialogue/Clicker" to="." method="_on_clicker_pressed"]
 [connection signal="pressed" from="Test/Start" to="." method="_on_start_pressed"]
-[connection signal="pressed" from="Test/Finish" to="." method="_on_finish_pressed"]
 [connection signal="pressed" from="Test/Button" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="Test/Story" to="." method="_on_select_scenario" binds= ["story"]]
 [connection signal="pressed" from="Test/Road" to="." method="_on_select_scenario" binds= ["test"]]
 [connection signal="pressed" from="Test/Simple" to="." method="_on_select_scenario" binds= ["simple"]]
 [connection signal="pressed" from="Test/Endings" to="." method="_on_select_scenario" binds= ["ending"]]
-[connection signal="pressed" from="Button" to="." method="_on_twin_toggle_pressed"]
+[connection signal="pressed" from="Test/Toggle" to="." method="_on_twin_toggle_pressed"]
