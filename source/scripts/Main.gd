@@ -96,14 +96,16 @@ func _on_start_pressed():
 	
 	parser.start_new_dialog()
 	
-	#parser.start_new_dialog( parser.LPATH )
-	#parser.start_new_dialog( parser.TEST3 )
-	
 	# resets the story pointer
 	dialogue_title.text = parser.get_dialog_header(true)
+	dialogue_panel.text = parser.get_dialog_next()
 	
-	dialogue_panel.visible_ratio = 1
-	_on_next_pressed()
+	dialogue_panel.visible_ratio = 0
+	
+	#_on_next_pressed()
+	
+	#print_debug(dialogue_title.text)
+	#print_debug(ialogue_panel.text)
 	
 	pass
 
@@ -112,6 +114,8 @@ func _on_next_pressed():
 	
 	if dialogue_panel.visible_ratio < 1: 
 		dialogue_panel.visible_ratio = 1
+		
+		# this might be causing the text to not appear sometimes...
 		
 		return
 	
@@ -124,6 +128,43 @@ func _on_next_pressed():
 	else: 
 		set_dialogue_popout( "" )
 	
+	#print_debug( "next_char: " + next_char )
+	#print( ["Punk Girl","Action"].has( next_char ) )
+	
+	if  !["Punk Girl","Action","Ending"].has( next_char ): 
+		_on_show_character( next_char )
+	
+	if next_char == "Action": 
+		question_name.text = next_char
+		#question_panel.text = next_text
+		question_panel.text = "[center]" + next_text + "[/center]"
+	
+	else: 
+		dialogue_panel.visible_characters = 0
+		dialogue_name.text = next_char
+		dialogue_panel.text = next_text
+		#dialogue_panel.text = "[center]" + next_text + "[/center]"
+		
+		# TODO: why isn't the text showing up sometimes? 
+		
+		#print_debug("next_text: " + next_text )
+		#print_debug("text_next: " + str(text_next) )
+		#print_debug("dialogue_panel.visible_ratio: " + str(dialogue_panel.visible_ratio) )
+		
+		#return
+	
+	if parser.check_for_action(): 
+		
+		#print_debug( "next_char: " + next_char )
+		#print_debug( "next_text: " + next_text )
+		#print_debug( "actions: " + str( parser.dialogue_actions ) )
+		
+		create_action_list()
+		set_next_button( false )
+	
+	else: 
+		set_next_button( true )
+	
 	#if next_char == "Dog:": 
 		#dialogue_name.text = next_char
 		#dialogue_panel.text = next_text
@@ -132,28 +173,60 @@ func _on_next_pressed():
 		#question_name.text = next_char
 		#question_panel.text = next_text
 	
-	if next_char == "Action": 
-		question_name.text = next_char
-		question_panel.text = next_text
+	#print_debug("end next...")
+	
+	pass
+
+func _on_show_character( character ): 
+	#print_debug("_on_show_character: " +  character )
+	
+	$Companion/Trinity.visible = false
+	$Companion/Crow.visible = false
+	$Companion/Evil.visible = false
+	$Companion/Person.visible = false
+	
+	if character == "Trinity"  : $Companion/Trinity.visible = !$Companion/Trinity.visible   # rabbit
+	if character == "Stranger" : $Companion/Crow.visible    = !$Companion/Crow.visible      # crow
+	if character == "Evil"     : $Companion/Evil.visible    = !$Companion/Evil.visible      # invert
+	if character == "Alien"    : $Companion/Person.visible  = !$Companion/Person.visible    # alien
+	
+	pass
+
+func _on_clicker_pressed():
+	
+	if $Dialogue/Forward.visible: 
+		_on_next_pressed()
+	
+	pass
+
+func reset_dialog_panels(): 
+	#print_debug("reset_dialog_panels...")
+	
+	$Dialogue/Left.visible = false
+	$Dialogue/Right.visible = false 
+	
+	dialogue_title.text = "..."
+	dialogue_panel.text = "..." 
+	#dialogue_panel.text = "  " 
+	
+	question_panel.text = ""
+	inventory_text.text = ""
+	
+	# remove any objects previously added to the container 
+	for old in question_choices.get_children(): 
+		old.queue_free()
+	
+	set_next_button( false )
+	
+	pass
+
+func set_next_button( value ): 
+	
+	if parser.dialogue_entry + 1 >= parser.dialogue_data.size(): 
+		dialog_forward.visible = false
 	
 	else: 
-		dialogue_panel.visible_characters = 0
-		dialogue_name.text = next_char
-		dialogue_panel.text = next_text
-		
-		#return
-	
-	if parser.check_for_action(): 
-		
-		print_debug( "next_char: " + next_char )
-		print_debug( "next_text: " + next_text )
-		print_debug( "actions: " + str( parser.dialogue_actions ) )
-		
-		create_action_list()
-		set_next_button( false )
-	
-	else: 
-		set_next_button( true )
+		dialog_forward.visible = value
 	
 	pass
 
@@ -164,10 +237,22 @@ func set_dialogue_popout( value ):
 	
 	pass
 
-func _on_clicker_pressed():
+func select_action_item( item ): 
+	print_debug("create_action_list...")
+	print(item)
 	
-	if $Dialogue/Forward.visible: 
-		_on_next_pressed()
+	dialogue_panel.visible_ratio = 1
+	
+	reset_dialog_panels()
+	dialogue_panel.text = item[0]
+	
+	parser.set_dialog_position( item[1] )
+	set_next_button( true )
+	
+	if parser.dialogue_commands != []: 
+		create_command_items()
+	
+	_on_next_pressed()
 	
 	pass
 
@@ -182,6 +267,16 @@ func create_action_list():
 			var new_button = Button.new()
 			new_button.text = action[0]
 			new_button.connect( "pressed", select_action_item.bind( action ) )
+			
+			#var button_font = "res://assets/fonts/Kalam-Regular.ttf"
+			#var button_font = "res://assets/fonts/SpaceMono-Regular.ttf"
+			#var button_font = "res://assets/fonts/EduBeginner-Regular.ttf"
+			
+			var button_font = "res://assets/fonts/EduBeginner-Regular.ttf"
+			new_button.set( "theme_override_fonts/font", load(button_font) )
+			new_button.set("theme_override_font_sizes/font_size", 20)
+			
+			#$Dialogue/Panel.set( "theme_override_styles/panel", load(theme) )
 			
 			question_choices.add_child( new_button )
 		
@@ -199,81 +294,10 @@ func create_command_items():
 	
 	#print( command_items[0] )
 	
-	inventory_text.text += command_items[0][1].to_pascal_case ()
+	if command_items[0].size() > 1: 
+		inventory_text.text += command_items[0][1].to_pascal_case ()
 	
 	parser.dialogue_commands = []
-	
-	pass
-
-func reset_dialog_panels(): 
-	
-	dialogue_title.text = "..."
-	dialogue_panel.text = "..." 
-	question_panel.text = ""
-	
-	inventory_text.text = ""
-	
-	# remove any objects previously added to the container 
-	for old in question_choices.get_children(): 
-		old.queue_free()
-	
-	set_next_button( false )
-	
-	pass
-
-func select_action_item( item ): 
-	
-	dialogue_panel.visible_ratio = 1
-	
-	reset_dialog_panels()
-	dialogue_panel.text = item[0]
-	
-	parser.set_dialog_position( item[1] )
-	set_next_button( true )
-	
-	if parser.dialogue_commands != []: 
-		create_command_items()
-	
-	_on_next_pressed()
-	
-	pass
-
-func set_next_button( value ): 
-	
-	if parser.dialogue_entry + 1 >= parser.dialogue_data.size(): 
-		dialog_forward.visible = false
-	
-	else: 
-		dialog_forward.visible = value
-	
-	pass
-
-func set_theme_1(): 
-	set_theme( "res://assets/themes/style_box_flat_blue_light.tres" )
-	Data.setting_theme = "blue"
-	
-	pass
-
-func set_theme_2(): 
-	set_theme( "res://assets/themes/style_box_flat_green_light.tres" )
-	Data.setting_theme = "green"
-	
-	pass
-
-func set_theme_3(): 
-	set_theme( "res://assets/themes/style_box_flat_purple_light.tres" )
-	Data.setting_theme = "red"
-	
-	print_debug(Data.setting_theme)
-	
-	pass
-
-func set_theme( theme ): 
-	
-	$Dialogue/Panel.set( "theme_override_styles/panel", load(theme) )
-	$Choices/Panel.set( "theme_override_styles/panel", load(theme) )
-	$Dialogue/Left/Angle.set( "theme_override_styles/panel", load(theme) )
-	$Dialogue/Right/Angle.set( "theme_override_styles/panel", load(theme) )
 	
 	pass
 
@@ -334,10 +358,37 @@ func _on_parser_game_over():
 
 func _on_manager_data_loaded():
 	
-	#_on_sound_pressed( type )
-	
 	_on_set_sound()
 	_on_set_theme()
+	
+	pass
+
+func set_theme( theme ): 
+	
+	$Dialogue/Panel.set( "theme_override_styles/panel", load(theme) )
+	$Choices/Panel.set( "theme_override_styles/panel", load(theme) )
+	$Dialogue/Left/Angle.set( "theme_override_styles/panel", load(theme) )
+	$Dialogue/Right/Angle.set( "theme_override_styles/panel", load(theme) )
+	
+	pass
+
+func set_theme_1(): 
+	set_theme( "res://assets/themes/style_box_flat_blue_light.tres" )
+	Data.setting_theme = "blue"
+	
+	pass
+
+func set_theme_2(): 
+	set_theme( "res://assets/themes/style_box_flat_green_light.tres" )
+	Data.setting_theme = "green"
+	
+	pass
+
+func set_theme_3(): 
+	set_theme( "res://assets/themes/style_box_flat_purple_light.tres" )
+	Data.setting_theme = "red"
+	
+	print_debug(Data.setting_theme)
 	
 	pass
 
@@ -347,15 +398,9 @@ func _on_manager_data_loaded():
 # for testing...
 func _on_twin_toggle_pressed():
 	
-	$Companion/Sprite2D.visible = !$Companion/Sprite2D.visible
+	#$Companion/Sprite2D.visible = !$Companion/Sprite2D.visible
 	
 	pass
-
-
-
-
-
-
 
 
 

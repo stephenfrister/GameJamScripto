@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://br6gdeossjpil"]
+[gd_scene load_steps=25 format=3 uid="uid://br6gdeossjpil"]
 
 [ext_resource type="Script" path="res://source/scripts/Main.gd" id="1_y0ww2"]
 [ext_resource type="AudioStream" uid="uid://o4i1lk2xu0as" path="res://assets/audio/music/CitySunshine-loop.mp3" id="2_31upr"]
@@ -16,6 +16,7 @@
 [ext_resource type="Theme" uid="uid://ciw62x4gmq5wj" path="res://assets/themes/font_theme_amatic.tres" id="11_fwc78"]
 [ext_resource type="FontFile" uid="uid://cjc828psgmrb5" path="res://assets/fonts/AmaticSC-Bold.ttf" id="15_763l6"]
 [ext_resource type="Shader" path="res://assets/shader/new_shader.gdshader" id="15_xrwaa"]
+[ext_resource type="Texture2D" uid="uid://bustw07k7qfph" path="res://assets/art/characters_423pm_alpha.png" id="16_aehi8"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pi5qg"]
 bg_color = Color(0.176471, 0.176471, 0.176471, 1)
@@ -231,13 +232,14 @@ offset_bottom = 740.0
 offset_left = 397.0
 offset_top = 254.0
 offset_right = 765.0
-offset_bottom = 439.0
+offset_bottom = 415.0
 theme = ExtResource("11_fwc78")
+bbcode_enabled = true
 
 [node name="ScrollContainer" type="ScrollContainer" parent="Choices"]
 custom_minimum_size = Vector2(350, 30)
 offset_left = 397.0
-offset_top = 442.0
+offset_top = 422.0
 offset_right = 761.0
 offset_bottom = 587.0
 horizontal_scroll_mode = 0
@@ -257,10 +259,10 @@ layout_mode = 2
 [node name="Dialogue" type="Node2D" parent="."]
 
 [node name="Title" type="Label" parent="Dialogue"]
-offset_left = 54.0
-offset_top = 621.0
-offset_right = 239.0
-offset_bottom = 652.0
+offset_left = 75.0
+offset_top = 682.0
+offset_right = 260.0
+offset_bottom = 713.0
 vertical_alignment = 1
 
 [node name="Panel" type="Panel" parent="Dialogue"]
@@ -333,11 +335,12 @@ libraries = {
 autoplay = "bounce"
 
 [node name="Text" type="RichTextLabel" parent="Dialogue"]
-offset_left = 396.0
+offset_left = 397.0
 offset_top = 40.0
-offset_right = 767.0
+offset_right = 762.0
 offset_bottom = 185.0
 theme = ExtResource("11_fwc78")
+bbcode_enabled = true
 
 [node name="Clicker" type="Button" parent="Dialogue"]
 self_modulate = Color(1, 1, 1, 0)
@@ -374,11 +377,20 @@ text = "..."
 [node name="Character" type="Node2D" parent="."]
 
 [node name="Name" type="Label" parent="Character"]
-offset_left = 21.0
-offset_top = 23.0
-offset_right = 300.0
-offset_bottom = 74.0
+offset_left = 25.0
+offset_top = -99.0
+offset_right = 304.0
+offset_bottom = -48.0
 theme = ExtResource("11_fwc78")
+horizontal_alignment = 1
+
+[node name="Label" type="Label" parent="Character"]
+offset_left = 21.0
+offset_top = 28.0
+offset_right = 301.0
+offset_bottom = 71.0
+theme = ExtResource("11_fwc78")
+text = "Punk Girl"
 horizontal_alignment = 1
 
 [node name="Panel" type="Panel" parent="Character"]
@@ -401,11 +413,35 @@ offset_right = 1140.0
 offset_bottom = 559.0
 theme_override_styles/panel = ExtResource("10_3xfsc")
 
-[node name="Sprite2D" type="Sprite2D" parent="Companion"]
+[node name="Evil" type="Sprite2D" parent="Companion"]
 visible = false
 material = SubResource("ShaderMaterial_5qvv1")
 position = Vector2(1000, 304)
 texture = ExtResource("9_m2kyw")
+
+[node name="Trinity" type="Sprite2D" parent="Companion"]
+visible = false
+position = Vector2(995, 308.5)
+scale = Vector2(0.473968, 0.511765)
+texture = ExtResource("16_aehi8")
+region_enabled = true
+region_rect = Rect2(1867.74, 93.4054, 557.655, 850.748)
+
+[node name="Person" type="Sprite2D" parent="Companion"]
+visible = false
+position = Vector2(995.5, 311.5)
+scale = Vector2(0.399116, 0.518824)
+texture = ExtResource("16_aehi8")
+region_enabled = true
+region_rect = Rect2(609.346, 93.4054, 679.561, 850.748)
+
+[node name="Crow" type="Sprite2D" parent="Companion"]
+visible = false
+position = Vector2(1000, 315.5)
+scale = Vector2(0.473968, 0.511765)
+texture = ExtResource("16_aehi8")
+region_enabled = true
+region_rect = Rect2(1288.91, 140.564, 529.124, 853.342)
 
 [node name="Test" type="Node2D" parent="."]
 
@@ -858,6 +894,7 @@ text = "Character"
 metadata/_edit_use_anchors_ = true
 
 [node name="Button" type="Button" parent="."]
+visible = false
 offset_left = 855.0
 offset_top = 11.0
 offset_right = 942.0

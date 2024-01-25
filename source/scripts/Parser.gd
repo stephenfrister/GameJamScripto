@@ -42,6 +42,7 @@ func start_new_dialog():
 	
 	var jfile = JPATH + scenario_selected
 	get_json_file( jfile )
+	get_dialog_header()
 	
 	pass
 
@@ -110,8 +111,6 @@ func get_dialog_next():
 		
 		pass
 	
-	print_debug("game over..?")
-	
 	emit_signal("game_over")
 	
 	return "..."
@@ -119,7 +118,7 @@ func get_dialog_next():
 	#pass
 
 func check_for_commands(): 
-	print_debug("check_for_commands...")
+	#print_debug("check_for_commands...")
 	
 	dialogue_commands = []
 	
@@ -200,7 +199,7 @@ func set_dialog_position( entry ):
 				dialogue_entry = action_entry
 				
 				check_for_commands()
-				print_debug( dialogue_commands )
+				#print_debug( dialogue_commands )
 				
 				break
 		

@@ -1,10 +1,10 @@
 [gd_scene load_steps=6 format=3 uid="uid://b7hn05o7kq7lo"]
 
 [ext_resource type="Script" path="res://source/scripts/Finish.gd" id="1_uxddl"]
-[ext_resource type="Theme" uid="uid://bdm6pa2g3ulh5" path="res://assets/themes/font_theme_shadows.tres" id="2_eq8me"]
 [ext_resource type="FontFile" uid="uid://cjc828psgmrb5" path="res://assets/fonts/AmaticSC-Bold.ttf" id="2_l7s2p"]
 [ext_resource type="StyleBox" uid="uid://bjjs87buslrdx" path="res://assets/themes/style_box_flat_blue_light.tres" id="3_nl0eq"]
 [ext_resource type="StyleBox" uid="uid://cxmouk6dkrx6e" path="res://assets/themes/style_box_flat_green_light.tres" id="4_kfly3"]
+[ext_resource type="Theme" uid="uid://bawlegf3i1q33" path="res://assets/themes/font_theme_beginner.tres" id="5_tou2t"]
 
 [node name="Finish" type="Node2D"]
 script = ExtResource("1_uxddl")
@@ -15,10 +15,10 @@ offset_bottom = 648.0
 metadata/_edit_lock_ = true
 
 [node name="Start" type="Button" parent="."]
-offset_left = 983.0
-offset_top = 564.0
-offset_right = 1135.0
-offset_bottom = 632.0
+offset_left = 986.0
+offset_top = 15.0
+offset_right = 1138.0
+offset_bottom = 83.0
 focus_mode = 0
 theme_override_fonts/font = ExtResource("2_l7s2p")
 theme_override_font_sizes/font_size = 40
@@ -28,11 +28,11 @@ text = "Start Over"
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 offset_left = 20.0
-offset_top = 17.0
+offset_top = 40.0
 offset_right = 1130.0
-offset_bottom = 628.0
+offset_bottom = 651.0
 mouse_filter = 2
-theme = ExtResource("2_eq8me")
+theme = ExtResource("5_tou2t")
 bbcode_enabled = true
 text = "[center]Thank you for playing our game!
 
@@ -47,10 +47,10 @@ Music \"Mysterious Lights\" written by Bryan Teoh"
 metadata/_edit_lock_ = true
 
 [node name="Link" type="Button" parent="."]
-offset_left = 716.0
-offset_top = 378.0
-offset_right = 967.0
-offset_bottom = 414.0
+offset_left = 732.0
+offset_top = 367.0
+offset_right = 983.0
+offset_bottom = 403.0
 focus_mode = 0
 theme_override_styles/normal = ExtResource("3_nl0eq")
 theme_override_styles/hover = ExtResource("4_kfly3")
@@ -64,6 +64,7 @@ offset_bottom = 31.0
 theme_override_colors/font_color = Color(0.878431, 0.556863, 0.490196, 1)
 theme_override_font_sizes/font_size = 20
 text = "https://www.scripto.live"
+metadata/_edit_lock_ = true
 
 [connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="Link" to="." method="_on_link_pressed"]

@@ -2,6 +2,7 @@ extends Node2D
 
 
 var volume_value_last = 0
+var game_starting = false
 
 signal game_start
 signal volume_changed
@@ -14,9 +15,18 @@ func _ready():
 #func _process(_delta):
 	#pass
 
+func _input(event):
+	
+	if event.is_action_pressed("ui_accept") && !game_starting && visible: 
+		game_starting = true
+		_on_new_game_pressed()
+	
+	pass
+
 func _on_new_game_pressed():
 	#print_debug("_on_new_game_pressed...")
 	
+	game_starting = true
 	emit_signal("game_start")
 	
 	pass

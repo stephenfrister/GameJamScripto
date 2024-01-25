@@ -5,14 +5,24 @@
     "id": "5533bbb6-4fdf-4ffa-af5b-e8180aa4768d"
   },
   {
-    "text": " ",
+    "text": "... ",
     "blockType": "character",
     "id": "a9ee9298-ad4a-498e-93ce-d57c159e0016"
   },
   {
-    "text": "Wake up...",
+    "text": "...",
     "blockType": "dialogue",
     "id": "809153e3-2cf4-4e4c-ad4c-96f617674692"
+  },
+  {
+    "text": "... ",
+    "blockType": "character",
+    "id": "ed4889a2-8a22-4fdd-9cf8-e54f5a62f165"
+  },
+  {
+    "text": "Wake up...",
+    "blockType": "dialogue",
+    "id": "38a1c13e-9ea7-457c-82ce-4cef00408872"
   },
   {
     "text": "Punk Girl",
@@ -20,7 +30,7 @@
     "id": "04c06b03-b51e-4ed4-a6a7-0b3bc3d6762f"
   },
   {
-    "text": "Wake up Aria...",
+    "text": "Wake up [color=red]Aria[/color]...",
     "blockType": "dialogue",
     "id": "faf67698-f3e9-422b-a926-83f0e4dc717c"
   },
@@ -70,7 +80,7 @@
     "id": "22fc353f-cda6-42bc-b2e2-308511c4d69b"
   },
   {
-    "text": "Ah yes, a nice relaxing nap on a bench is a great (strange?) way to start the day...",
+    "text": "Ah yes, a nice [color=red]relaxing[/color] nap on a bench is a great (strange?) way to start the day...",
     "blockType": "dialogue",
     "id": "8a9c2ae0-f905-481e-8948-9f9ae3cf92f4"
   },
@@ -105,12 +115,12 @@
     "id": "b45a8e07-554b-4837-8b6e-91c36ba2459f"
   },
   {
-    "text": "Where am I?",
+    "text": "Where am I...?",
     "blockType": "dialogue",
     "id": "5b5cfbb2-f807-4f0a-87e9-807fc8ab844c"
   },
   {
-    "text": "GOTO_EMPTY",
+    "text": "GOTO_WHERE",
     "blockType": "transition",
     "id": "212c9cde-c8c2-413d-97a4-0996cbc303d4"
   },
@@ -125,7 +135,7 @@
     "id": "873e418a-1d14-4894-a9b1-bfc448c814bd"
   },
   {
-    "text": "GOTO_EMPTY",
+    "text": "GOTO_IKNOW",
     "blockType": "transition",
     "id": "a04298f3-eb02-4051-8541-8ac9914ed90f"
   },
@@ -140,7 +150,7 @@
     "id": "56304d1b-11d3-4726-b161-4c2348490491"
   },
   {
-    "text": "GOTO_EMPTY",
+    "text": "GOTO_HEREHOW",
     "blockType": "transition",
     "id": "f0d1468d-715d-4dc2-a19b-0881c46151a1"
   },
@@ -155,7 +165,7 @@
     "id": "cd790619-0933-42b9-84ad-7d2588637799"
   },
   {
-    "text": "GOTO_EMPTY",
+    "text": "GOTO_GOHOME",
     "blockType": "transition",
     "id": "7e0a04b4-a63f-4064-9f86-726919e04f62"
   },
@@ -165,19 +175,264 @@
     "id": "772463df-c38b-4e53-8cba-5e483cedcc48"
   },
   {
-    "text": "GOTO_EMPTY",
+    "text": "GOTO_WHERE",
     "blockType": "sceneHeading",
-    "id": "d6641bda-a80a-474c-bdc1-8b9a15631221"
+    "id": "f7f4a916-a712-4414-bba6-3d94af81b065"
   },
   {
     "text": "Punk Girl",
     "blockType": "character",
-    "id": "b361f6e5-642d-4dcc-9ea6-fd3688d4dd0e"
+    "id": "dd56492f-13aa-43c9-a52c-c57ed86988e4"
   },
   {
-    "text": "<this is a placeholder character entry, if you have arrived here, a previous entry is empty>",
+    "text": "Would be nice to know [color=red]where[/color] I am, this place isn't familiar to me. ",
     "blockType": "dialogue",
-    "id": "ef7b343c-fce9-4425-8fe0-09a5ababc319"
+    "id": "5baf1583-9f4d-4627-bf18-14d0a773fcd5"
+  },
+  {
+    "text": "left",
+    "blockType": "general",
+    "id": "428e67f7-9c1f-43ae-be60-30b378f1000b"
+  },
+  {
+    "text": "Punk Girl",
+    "blockType": "character",
+    "id": "1a961f92-e696-49fe-bc83-3405656d8715"
+  },
+  {
+    "text": "The best way to find out where you are is by [color=red]exploring[/color] nearby things. ",
+    "blockType": "dialogue",
+    "id": "3a9c7c09-476f-474f-9caa-539d89e6b59f"
+  },
+  {
+    "text": "left",
+    "blockType": "general",
+    "id": "a9fa2206-05ec-4af4-8495-495a9e40b9bd"
+  },
+  {
+    "text": "Action",
+    "blockType": "character",
+    "id": "4ade23bf-084c-4eea-97a9-7697701b86df"
+  },
+  {
+    "text": "Maybe one of these [color=green]places[/color] will help me figure it out: ",
+    "blockType": "dialogue",
+    "id": "ec0580c6-7500-4936-9118-c1ba296c1340"
+  },
+  {
+    "text": "left",
+    "blockType": "general",
+    "id": "900a6816-ab12-43fa-a749-a4c7160fdea1"
+  },
+  {
+    "text": "action",
+    "blockType": "action",
+    "id": "e9e5272f-8728-4d77-a027-ba85ebee0917"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "a67e9828-cd4d-4bdd-9660-50c5ab9160a6"
+  },
+  {
+    "text": "The store here.",
+    "blockType": "dialogue",
+    "id": "01c997db-2fc3-48c9-9225-e7195814c168"
+  },
+  {
+    "text": "GOTO_INTOSTORE",
+    "blockType": "transition",
+    "id": "9962c4ef-83e3-442f-8bbf-62bb5dd1185e"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "e9098df7-32cf-4ff1-a2ac-657659b90890"
+  },
+  {
+    "text": "The comedy club across the street.",
+    "blockType": "dialogue",
+    "id": "87c29c0f-eca0-4e16-aef6-4394bd494f87"
+  },
+  {
+    "text": "GOTO_COMEDY",
+    "blockType": "transition",
+    "id": "9e4aee0a-9e2b-4d89-bc0b-fc368d43cc40"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "da5f487b-ee95-4286-8068-51c0ce8350e7"
+  },
+  {
+    "text": "Actually, this place is fine.",
+    "blockType": "dialogue",
+    "id": "eeb4942b-49f4-4f26-a8ef-f864a23c9497"
+  },
+  {
+    "text": "Ending4",
+    "blockType": "transition",
+    "id": "706b440e-9548-4bdb-b67c-284de35e7268"
+  },
+  {
+    "text": "end action",
+    "blockType": "action",
+    "id": "66c110fd-16cd-4d18-b65c-a5ec00ebc2d9"
+  },
+  {
+    "text": "GOTO_IKNOW",
+    "blockType": "sceneHeading",
+    "id": "e438a369-01c2-4b2f-9325-25316a0f80bb"
+  },
+  {
+    "text": "Punk Girl",
+    "blockType": "character",
+    "id": "69f075b5-5b67-4f88-8a6f-cc83c8b99159"
+  },
+  {
+    "text": "I remember where I am and how I got here, but what I really want to do is get home.",
+    "blockType": "dialogue",
+    "id": "7a7a4ece-cbf0-4286-8edb-6f44afe116eb"
+  },
+  {
+    "text": "left",
+    "blockType": "general",
+    "id": "2f305bc4-02b9-4596-8aa5-afa101238c87"
+  },
+  {
+    "text": "Punk Girl",
+    "blockType": "character",
+    "id": "a8614946-157c-4895-acad-cc034d9ef1d9"
+  },
+  {
+    "text": "I know the people here, maybe I should ask one of them for some help.",
+    "blockType": "dialogue",
+    "id": "20d07970-cac8-4170-a5ee-9eb8e29d4dab"
+  },
+  {
+    "text": "left",
+    "blockType": "general",
+    "id": "d589ce3d-624d-4640-81aa-b002c6ec67df"
+  },
+  {
+    "text": "Action",
+    "blockType": "character",
+    "id": "f2942dab-a3b8-4efb-8c37-5bb48a8f95d7"
+  },
+  {
+    "text": "Ask one of the people that you know: ",
+    "blockType": "dialogue",
+    "id": "248d7988-3fab-4e36-8fd9-b7a30aa66224"
+  },
+  {
+    "text": "left",
+    "blockType": "general",
+    "id": "7614f592-8b0e-4ccc-91e1-ab2359925c34"
+  },
+  {
+    "text": "action",
+    "blockType": "action",
+    "id": "ca7de616-ec79-4825-b3ce-82d946386ebe"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "77b40a47-d631-4d94-8a1b-23473417c69a"
+  },
+  {
+    "text": "The store owner.",
+    "blockType": "dialogue",
+    "id": "364d07c0-7b6a-4318-a173-8366676e3025"
+  },
+  {
+    "text": "GOTO_STOREPERSON",
+    "blockType": "transition",
+    "id": "b2c21a79-3200-4cc8-a45d-276353ebc0e4"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "f4904a95-7381-474a-b740-0eefde61748f"
+  },
+  {
+    "text": "The comedy club owner.",
+    "blockType": "dialogue",
+    "id": "6731a5e1-35f0-4662-8381-27bde94554a7"
+  },
+  {
+    "text": "GOTO_STOREPERSON",
+    "blockType": "transition",
+    "id": "fe94b15d-ece3-4335-a12f-0e22a08b4fb5"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "d4718c85-30dc-4e38-97b6-63f6b80fff10"
+  },
+  {
+    "text": "My friend who drove us here.",
+    "blockType": "dialogue",
+    "id": "43c40cbf-5257-4b1e-80bc-e7af7fd66b15"
+  },
+  {
+    "text": "GOTO_ASKSTRANGER",
+    "blockType": "transition",
+    "id": "7d3b7c25-a7a1-4124-93ac-f16908a627c8"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "e84e3710-0405-48ce-83b6-80a0420fe804"
+  },
+  {
+    "text": "Let me sit back down real quick.",
+    "blockType": "dialogue",
+    "id": "c12d149e-f863-4a7e-8183-013e2b02b22d"
+  },
+  {
+    "text": "GOTO_BACKATBENCH",
+    "blockType": "transition",
+    "id": "20b970e6-ca6b-45e6-835f-7da45a752c39"
+  },
+  {
+    "text": "end action",
+    "blockType": "action",
+    "id": "99ab596c-43f2-440d-94c4-d2d5b908e21a"
+  },
+  {
+    "text": "GOTO_HEREHOW",
+    "blockType": "sceneHeading",
+    "id": "eabdf604-4ffd-4794-9c52-c5e265982a06"
+  },
+  {
+    "text": "Punk Girl",
+    "blockType": "character",
+    "id": "fc55b457-a6e0-4b88-aa2f-7b189340b2b8"
+  },
+  {
+    "text": "Wait a sec, [color=red]how[/color] did I get here again? ",
+    "blockType": "dialogue",
+    "id": "618cd418-3765-4ddb-aab1-b17bd47414cb"
+  },
+  {
+    "text": "left",
+    "blockType": "general",
+    "id": "87b3b642-3962-4f41-8f0b-3eb254108442"
+  },
+  {
+    "text": "Punk Girl",
+    "blockType": "character",
+    "id": "d472329a-9a8f-4319-8c56-7c8b4fb7371e"
+  },
+  {
+    "text": "My head is fuzzy from having covid recently, but I think a good way to heal is to [color=red]laugh[/color]... ",
+    "blockType": "dialogue",
+    "id": "1666c25e-ff77-4462-991e-ecfdca018ff2"
+  },
+  {
+    "text": "left",
+    "blockType": "general",
+    "id": "537b30e9-e45f-410e-9dee-f2acb3af665a"
   },
   {
     "text": "Action",
@@ -185,9 +440,1729 @@
     "id": "842c77cc-43eb-4083-90c5-8b47cca8f969"
   },
   {
-    "text": "<this is a placeholder action entry, if you have arrived here, a previous entry hasn't been filled in>",
+    "text": "Ok, this is what I remember: ",
     "blockType": "dialogue",
     "id": "4fdcdf79-c9df-4ccc-bb23-f3caeb26ad9d"
+  },
+  {
+    "text": "left",
+    "blockType": "general",
+    "id": "4214d9d9-bbbb-499b-aebf-f0edba6efb07"
+  },
+  {
+    "text": "action",
+    "blockType": "action",
+    "id": "b450f89b-d335-407b-a198-8a19a5433a11"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "0abd0cf2-21d2-4fe4-a619-32b9ad4d365b"
+  },
+  {
+    "text": "I was trying to get somewhere...",
+    "blockType": "dialogue",
+    "id": "a7339e1c-32de-4af4-addb-65e0fab42b97"
+  },
+  {
+    "text": "GOTO_TRAVELLER",
+    "blockType": "transition",
+    "id": "d165c55f-c2d3-48d1-a780-b6c56c83f77f"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "4f48dd73-7447-4d39-a9bb-a01c3824e1db"
+  },
+  {
+    "text": "I was sitting at my computer...",
+    "blockType": "dialogue",
+    "id": "9eb654b0-fba7-46a5-a603-7b02fc413f20"
+  },
+  {
+    "text": "GOTO_COMPUTER",
+    "blockType": "transition",
+    "id": "ba5cffde-cc21-46d0-9576-3e266493a714"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "5df24c3f-9cd0-4c86-a1a0-2bcc32f4fcb8"
+  },
+  {
+    "text": "I was looking for a comedy show...",
+    "blockType": "dialogue",
+    "id": "b1ed4593-a335-48ad-861a-0da39cb9e097"
+  },
+  {
+    "text": "GOTO_COMEDY",
+    "blockType": "transition",
+    "id": "3bcd8720-fb4c-482e-b0a5-5b427f7db11d"
+  },
+  {
+    "text": "end action",
+    "blockType": "action",
+    "id": "f4383c96-7fcd-4331-a8d4-b76b2d1ff201"
+  },
+  {
+    "text": "GOTO_GOHOME",
+    "blockType": "sceneHeading",
+    "id": "184c81fb-d7cd-4adb-bedb-52d5382d404e"
+  },
+  {
+    "text": "Punk Girl",
+    "blockType": "character",
+    "id": "99d247ca-8e63-405b-8558-36b93fd819fb"
+  },
+  {
+    "text": "I just want to go back [color=green]home[/color]. ",
+    "blockType": "dialogue",
+    "id": "8a23ff7b-262f-4413-969f-2c79715f8070"
+  },
+  {
+    "text": "left",
+    "blockType": "general",
+    "id": "1d668ee9-0394-42b8-8573-fb1b622ae9ce"
+  },
+  {
+    "text": "Punk Girl",
+    "blockType": "character",
+    "id": "480e24d2-3cd6-4d8e-9f06-70e5962a1208"
+  },
+  {
+    "text": "Ok brain, no more pizza until we [color=red]think[/color] our way out of this.  ",
+    "blockType": "dialogue",
+    "id": "f5cd58c2-8157-458a-9481-f9abb5098d20"
+  },
+  {
+    "text": "left",
+    "blockType": "general",
+    "id": "4e00a3ca-3fda-4c8e-91f7-148eebc07c47"
+  },
+  {
+    "text": "Action",
+    "blockType": "character",
+    "id": "a97d6fff-77cf-4498-b6be-b8f306b48705"
+  },
+  {
+    "text": "So many choices and so little direction: ",
+    "blockType": "dialogue",
+    "id": "012325cb-5f5c-4f17-ab07-7bb23ed112eb"
+  },
+  {
+    "text": "left",
+    "blockType": "general",
+    "id": "b78fdd43-15c5-45c2-895a-1f33fb45977c"
+  },
+  {
+    "text": "action",
+    "blockType": "action",
+    "id": "b885825e-9e44-4fab-b339-dbf455eb26f9"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "8816e2e7-fd9d-4c9a-bbbe-0f43088ac11e"
+  },
+  {
+    "text": "Look around here.",
+    "blockType": "dialogue",
+    "id": "f172bb9f-8369-4864-bc1e-8d98e067db54"
+  },
+  {
+    "text": "GOTO_TRAVELLER",
+    "blockType": "transition",
+    "id": "392d7dd4-02e1-45a6-a9f6-3be605608da4"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "39f70eb1-2eb7-4df1-8b7a-7aa6fb9e293f"
+  },
+  {
+    "text": "Start walking in a direction.",
+    "blockType": "dialogue",
+    "id": "2b9cf55d-38da-4a1d-9543-04934b7492dc"
+  },
+  {
+    "text": "ENDING4",
+    "blockType": "transition",
+    "id": "6c59b968-e490-4a60-9580-c3501e3adaa2"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "583b83a2-17f5-49c9-a0b9-41258da8a843"
+  },
+  {
+    "text": "Sit down and think.",
+    "blockType": "dialogue",
+    "id": "f3874e9c-d9de-4012-ad89-52bc3467d184"
+  },
+  {
+    "text": "GOTO_BACKATBENCH",
+    "blockType": "transition",
+    "id": "b4c10d4a-c8d3-4450-98c6-8754f3349f6b"
+  },
+  {
+    "text": "end action",
+    "blockType": "action",
+    "id": "e8067523-54c7-4749-94a7-138536a27435"
+  },
+  {
+    "text": "GOTO_TRAVELLER",
+    "blockType": "sceneHeading",
+    "id": "d6641bda-a80a-474c-bdc1-8b9a15631221"
+  },
+  {
+    "text": "Punk Girl",
+    "blockType": "character",
+    "id": "63c4c1b2-9be4-4829-ac7a-ce899884107c"
+  },
+  {
+    "text": "You [color=red]look[/color] around and take in this most excellent sleeping spot to get some clues...",
+    "blockType": "dialogue",
+    "id": "18f5cd15-5ddd-40de-a68c-2a4365dbeecc"
+  },
+  {
+    "text": "Punk Girl",
+    "blockType": "character",
+    "id": "c103d4c7-91ed-45c5-93d2-697577bd7cd1"
+  },
+  {
+    "text": "Ok, it's coming back to me now. I need to get [color=red]somewhere[/color], but what's the best way to do that? ",
+    "blockType": "dialogue",
+    "id": "5394447a-6400-42f0-ac0f-5036b42751f8"
+  },
+  {
+    "text": "left",
+    "blockType": "general",
+    "id": "1751b940-b08c-405a-9385-134384059ac3"
+  },
+  {
+    "text": "Action",
+    "blockType": "character",
+    "id": "0a86b985-ec45-4b21-9a9a-f97cd612825f"
+  },
+  {
+    "text": "Scanning around the area you see a couple of things that catch your interest: ",
+    "blockType": "dialogue",
+    "id": "254a9004-d3e5-471b-9528-d1fc8e362eb7"
+  },
+  {
+    "text": "left",
+    "blockType": "general",
+    "id": "2d1f10ad-d07b-4508-9c08-c628268b52ae"
+  },
+  {
+    "text": "action",
+    "blockType": "action",
+    "id": "301f53a5-414f-4281-bc08-0900b8e668e9"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "fad32532-a7e6-40ea-99a5-ee43c1c56e82"
+  },
+  {
+    "text": "Check out the old pay phone.",
+    "blockType": "dialogue",
+    "id": "048edea6-1492-4b0c-8d22-618a51c09327"
+  },
+  {
+    "text": "GOTO_PHONEBOOTH",
+    "blockType": "transition",
+    "id": "78952fd7-1cf7-45f6-b3a0-c2c05db9128b"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "5a4ddf65-7905-4a4d-963f-6b502e521990"
+  },
+  {
+    "text": "Go into the store here.",
+    "blockType": "dialogue",
+    "id": "9f1157de-5de8-45fb-b50d-0e3481beb855"
+  },
+  {
+    "text": "GOTO_INTOSTORE",
+    "blockType": "transition",
+    "id": "ecadbb96-53db-4817-85fc-8fed5fa4b039"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "accf6298-f334-48a1-a646-89dbe471be81"
+  },
+  {
+    "text": "Ask a stranger for help.",
+    "blockType": "dialogue",
+    "id": "e33413a5-222d-4a92-ad30-b68b50741e45"
+  },
+  {
+    "text": "GOTO_ASKSTRANGER",
+    "blockType": "transition",
+    "id": "aa89a76c-b651-4a55-bc22-81fccaf637ef"
+  },
+  {
+    "text": "end action",
+    "blockType": "action",
+    "id": "f8fb4a0c-8bfc-46ad-a200-fbf3c3d658e8"
+  },
+  {
+    "text": "GOTO_PHONEBOOTH",
+    "blockType": "sceneHeading",
+    "id": "934d6f5f-54a3-48f2-82a6-f8b6516f2016"
+  },
+  {
+    "text": "Punk Girl",
+    "blockType": "character",
+    "id": "c3bc1f79-0ae9-4bc4-a774-9375e49a5815"
+  },
+  {
+    "text": "I haven't [color=red]seen[/color] an old working payphone in like... forever.",
+    "blockType": "dialogue",
+    "id": "1cd8f0d9-0b9b-4c34-8f1e-6082e4f02b5c"
+  },
+  {
+    "text": "left",
+    "blockType": "general",
+    "id": "e38e378e-c016-411c-9a7e-b1b491f6a584"
+  },
+  {
+    "text": "Punk Girl",
+    "blockType": "character",
+    "id": "b70a07d6-1b1f-46bc-bc07-1393a37db52f"
+  },
+  {
+    "text": "Maybe I can get to where I'm going if I make a [color=red]call[/color]... ",
+    "blockType": "dialogue",
+    "id": "b97467bb-0c41-4ba9-82cf-e34fe18d9161"
+  },
+  {
+    "text": "left",
+    "blockType": "general",
+    "id": "bf554ced-2531-40cb-9981-cc735ffebcfa"
+  },
+  {
+    "text": "Action",
+    "blockType": "character",
+    "id": "c51da433-e62a-4796-ab10-7571df496bcd"
+  },
+  {
+    "text": "You walk into the phone booth and the phone starts to ring: ",
+    "blockType": "dialogue",
+    "id": "f5ac7e9d-aac7-44f8-bd44-941a418b8a6c"
+  },
+  {
+    "text": "left",
+    "blockType": "general",
+    "id": "fcccf24f-8744-4eae-9e3c-a5eebcc2daef"
+  },
+  {
+    "text": "action",
+    "blockType": "action",
+    "id": "b1b164b4-e0a6-4f38-a788-190316a48b39"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "42e6d958-18c4-493f-b606-294b277f6ebf"
+  },
+  {
+    "text": "Make a call home.",
+    "blockType": "dialogue",
+    "id": "e006e32b-8b2a-4b3a-9cad-7cecc097ce3e"
+  },
+  {
+    "text": "GOTO_CALLHOME",
+    "blockType": "transition",
+    "id": "c9b5d06c-3091-41a3-861d-7f6269c4446e"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "10783f4c-9bc6-4a60-bdfe-7d91ef6e9b9f"
+  },
+  {
+    "text": "Leave the booth.",
+    "blockType": "dialogue",
+    "id": "d9f14691-b386-4296-88ea-8bc6b277c6c7"
+  },
+  {
+    "text": "GOTO_BACKATBENCH",
+    "blockType": "transition",
+    "id": "ff34c6d4-ee1d-49a5-a187-dff5b99aa438"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "5906f8c3-07d1-4a02-9472-b9b7f24ecf96"
+  },
+  {
+    "text": "Answer the phone.",
+    "blockType": "dialogue",
+    "id": "76923dbb-ee52-450b-8742-e708a223f466"
+  },
+  {
+    "text": "GOTO_ANSWERPHONE",
+    "blockType": "transition",
+    "id": "207ab649-c324-41a2-b806-8db25aac696f"
+  },
+  {
+    "text": "end action",
+    "blockType": "action",
+    "id": "77589edc-eb8c-4c8f-8b73-190b727d7221"
+  },
+  {
+    "text": "GOTO_CALLHOME",
+    "blockType": "sceneHeading",
+    "id": "c6c3ce7f-c745-4a69-af1a-440f16a127dd"
+  },
+  {
+    "text": "Punk Girl",
+    "blockType": "character",
+    "id": "b01ec753-6e4b-4b36-87b0-abb8c66a82b3"
+  },
+  {
+    "text": "You dial your [color=red]home[/color] number into phone and it rings. ",
+    "blockType": "dialogue",
+    "id": "9e121478-7fab-4b75-8798-d8e06c104b16"
+  },
+  {
+    "text": "Punk Girl",
+    "blockType": "character",
+    "id": "51b9eb70-cfca-440f-8655-2fc74ae93566"
+  },
+  {
+    "text": "Thank goodness for picking up! I've got a [color=red]funny[/color] story to tell you.  ",
+    "blockType": "dialogue",
+    "id": "a2b19a4b-6d73-44d3-a2a3-d1671b47b3e0"
+  },
+  {
+    "text": "left",
+    "blockType": "general",
+    "id": "8851f91c-af44-4c7d-9b1a-fb9dce74d4e2"
+  },
+  {
+    "text": "Action",
+    "blockType": "character",
+    "id": "2e80616d-a681-405d-b8d4-ea2cd3cd4b65"
+  },
+  {
+    "text": "What do you want to say to them: ",
+    "blockType": "dialogue",
+    "id": "e10a3cdb-a28f-48d2-a480-6642320cda07"
+  },
+  {
+    "text": "left",
+    "blockType": "general",
+    "id": "33c939a9-8b7d-4eeb-a8dc-99e7ed743e88"
+  },
+  {
+    "text": "action",
+    "blockType": "action",
+    "id": "1c289838-85ab-4d4d-8955-7997fa431cde"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "1a8e32fc-0b16-4b28-a52d-8ab24bb7bde1"
+  },
+  {
+    "text": "Ask for a ride home.",
+    "blockType": "dialogue",
+    "id": "89b23cd8-295c-494f-af70-2639473206a1"
+  },
+  {
+    "text": "GOTO_ASKRIDE",
+    "blockType": "transition",
+    "id": "5689cd3a-92cf-4c2a-9f10-6fdb9056a5c5"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "171130a9-5e6e-4579-adad-63de84918ae5"
+  },
+  {
+    "text": "Tell them that you are fine.",
+    "blockType": "dialogue",
+    "id": "72c10b51-9420-4d21-947e-aef6b7b2d9b4"
+  },
+  {
+    "text": "GOTO_FEELFINE",
+    "blockType": "transition",
+    "id": "9ba4153a-5e44-443f-aa35-69dfecf37eb4"
+  },
+  {
+    "text": "end action",
+    "blockType": "action",
+    "id": "24db263c-1f9a-428f-8c1d-2ea9d8842109"
+  },
+  {
+    "text": "GOTO_ASKRIDE",
+    "blockType": "sceneHeading",
+    "id": "dde08e92-6694-4ec2-bb77-ec6a626e1337"
+  },
+  {
+    "text": "Punk Girl",
+    "blockType": "character",
+    "id": "a95cf490-0196-4d81-a7d8-080e0612bda1"
+  },
+  {
+    "text": "I'd really [color=red]like[/color] to hitch a ride back home with you.",
+    "blockType": "dialogue",
+    "id": "07722e52-1254-4fcb-a7ea-8603a7f1176c"
+  },
+  {
+    "text": "left",
+    "blockType": "general",
+    "id": "9c3bbc43-bea2-4482-ae9b-99a2519137dc"
+  },
+  {
+    "text": "Action",
+    "blockType": "character",
+    "id": "eff0b20b-33b6-41a9-b9d4-483033e31ab9"
+  },
+  {
+    "text": "A simple request: ",
+    "blockType": "dialogue",
+    "id": "626be47c-83ae-440a-abf8-e5cae8e126d7"
+  },
+  {
+    "text": "left",
+    "blockType": "general",
+    "id": "009a7257-7226-4b6d-85a8-3a428d00c106"
+  },
+  {
+    "text": "action",
+    "blockType": "action",
+    "id": "2f159a2d-bf2d-456e-9a6b-ede82d338365"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "fbd1cde7-dd22-4db8-adb9-60068ccca581"
+  },
+  {
+    "text": "Get a ride.",
+    "blockType": "dialogue",
+    "id": "f8cf3787-038c-4268-8bf0-ddb5e0ca4c42"
+  },
+  {
+    "text": "ENDING1",
+    "blockType": "transition",
+    "id": "9fdc901a-1e4e-496c-878d-c783a8e58bf5"
+  },
+  {
+    "text": "end action",
+    "blockType": "action",
+    "id": "3a5176c4-5897-4d3a-920e-5ea442b0633d"
+  },
+  {
+    "text": "GOTO_FEELFINE",
+    "blockType": "sceneHeading",
+    "id": "9d8c3ad5-ed35-4599-b9ab-be9d1b31d04d"
+  },
+  {
+    "text": "Punk Girl",
+    "blockType": "character",
+    "id": "b5114d35-1d20-4795-b4b6-554171dfeded"
+  },
+  {
+    "text": "I'm feeling [color=red]fine[/color] and have everything under control.",
+    "blockType": "dialogue",
+    "id": "5cef8498-5dba-4048-8bbb-4827051c5aac"
+  },
+  {
+    "text": "left",
+    "blockType": "general",
+    "id": "2021a4c7-5b36-48a2-84c9-baa02fa67541"
+  },
+  {
+    "text": "Action",
+    "blockType": "character",
+    "id": "df4ee967-cf0c-4504-a931-0ed80fb3918a"
+  },
+  {
+    "text": "After telling them you are ok: ",
+    "blockType": "dialogue",
+    "id": "d15a0f26-6f41-47c7-95a6-28e91003c981"
+  },
+  {
+    "text": "left",
+    "blockType": "general",
+    "id": "42460f20-a839-4283-ad3d-fff0eb8fbd4f"
+  },
+  {
+    "text": "action",
+    "blockType": "action",
+    "id": "8c08725d-1dca-412f-a1b4-60ce54b00d6b"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "daed06f8-598e-472a-967f-cfb84fe5cdd0"
+  },
+  {
+    "text": "Go back outside",
+    "blockType": "dialogue",
+    "id": "0b68a007-b24c-4be9-98fb-f695ea722827"
+  },
+  {
+    "text": "GOTO_BACKATBENCH",
+    "blockType": "transition",
+    "id": "fa3e2861-eb73-413c-8c8d-2e2f354cec17"
+  },
+  {
+    "text": "end action",
+    "blockType": "action",
+    "id": "5415da2c-91fe-47f5-9427-b5c5349b55bd"
+  },
+  {
+    "text": "GOTO_BACKATBENCH",
+    "blockType": "sceneHeading",
+    "id": "acc27627-f7d1-4b3a-8b5b-471d667622f7"
+  },
+  {
+    "text": "...",
+    "blockType": "character",
+    "id": "a9bee51e-a607-4394-945e-09ef306e8aa6"
+  },
+  {
+    "text": "You leave, looking for something else. ",
+    "blockType": "dialogue",
+    "id": "ff68a7ff-dac9-4ef9-957c-563724dd94cb"
+  },
+  {
+    "text": "Punk Girl",
+    "blockType": "character",
+    "id": "cb146118-1a00-4657-8f77-c266d260fe27"
+  },
+  {
+    "text": "There's that bench again! [p]Oh, a nap sounds [color=red]nice[/color] right now. ",
+    "blockType": "dialogue",
+    "id": "4b9809ba-875e-4b41-b41b-f3a9c866ba87"
+  },
+  {
+    "text": "left",
+    "blockType": "general",
+    "id": "46426b5b-628b-48fa-8c2e-ffb6b580ef68"
+  },
+  {
+    "text": "Action",
+    "blockType": "character",
+    "id": "09fcb0b6-59a6-4a98-9829-bae7293655ca"
+  },
+  {
+    "text": "You go back to the bench and find a comfortable spot: ",
+    "blockType": "dialogue",
+    "id": "b8e24ce9-29f2-4ff9-9301-503a2cd42816"
+  },
+  {
+    "text": "left",
+    "blockType": "general",
+    "id": "fa160b88-c0e3-456a-aa79-3f220957a9e9"
+  },
+  {
+    "text": "action",
+    "blockType": "action",
+    "id": "90e52837-53bf-4e2a-afed-f92f11018e35"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "0ef38706-27c5-41c6-b110-4243c6f7401b"
+  },
+  {
+    "text": "This spot looks good.",
+    "blockType": "dialogue",
+    "id": "5dfec021-7897-4e76-8e67-6bd33c385f66"
+  },
+  {
+    "text": "ENDING3",
+    "blockType": "transition",
+    "id": "6bb8c19a-6945-456d-a521-95bc5362dc79"
+  },
+  {
+    "text": "end action",
+    "blockType": "action",
+    "id": "f5ab7b3c-e63f-4747-9294-bb3cb0ea8d04"
+  },
+  {
+    "text": "GOTO_ANSWERPHONE",
+    "blockType": "sceneHeading",
+    "id": "ba20a621-51fc-4da9-89f1-7d5cce871a2a"
+  },
+  {
+    "text": "Punk Girl",
+    "blockType": "character",
+    "id": "df1d3da0-85fb-4f71-bc9a-c959b7b687df"
+  },
+  {
+    "text": "Hello? Who's there? Are you [color=red]looking[/color] for someone? ",
+    "blockType": "dialogue",
+    "id": "3378a418-d114-4078-b8e3-e11d3d991821"
+  },
+  {
+    "text": "left",
+    "blockType": "general",
+    "id": "f3f93220-4168-413d-b33a-203039150af5"
+  },
+  {
+    "text": "Trinity",
+    "blockType": "character",
+    "id": "1456b385-ae27-4051-885b-6916fa7fcb5a"
+  },
+  {
+    "text": "My name is Trinity. [p]What is your [color=red]name[/color]?  ",
+    "blockType": "dialogue",
+    "id": "968ec6af-a3a7-479d-946a-e4368a2b5a32"
+  },
+  {
+    "text": "right",
+    "blockType": "general",
+    "id": "6290a1f8-4238-4b91-8485-3fc67f918a31"
+  },
+  {
+    "text": "Action",
+    "blockType": "character",
+    "id": "e1d4b22a-222f-42e6-987e-02989f8d82cc"
+  },
+  {
+    "text": "You pause for a second, suddenly unsure of yourself, with what seems like a basic question: ",
+    "blockType": "dialogue",
+    "id": "2a9f7788-2b58-4609-b24f-a62bbf670f68"
+  },
+  {
+    "text": "right",
+    "blockType": "general",
+    "id": "54c8b98a-b498-4085-a6ed-56647c517b52"
+  },
+  {
+    "text": "action",
+    "blockType": "action",
+    "id": "8f473a9d-7581-46d7-a68d-a833b5dba768"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "3d1a11c1-788f-4922-8b18-55dde85ae057"
+  },
+  {
+    "text": "My name is Punk Girl.",
+    "blockType": "dialogue",
+    "id": "3d66e9ba-f88d-4ca3-80df-9099b8ea42ef"
+  },
+  {
+    "text": "GOTO_HANGUP",
+    "blockType": "transition",
+    "id": "f288f795-721f-4878-b763-7a8d8accd1be"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "908b3d6b-8f2f-4039-955a-f4e72c2d3c16"
+  },
+  {
+    "text": "My name is Aria.",
+    "blockType": "dialogue",
+    "id": "4c8a0593-f9ac-4bae-86c4-e75e7be532c5"
+  },
+  {
+    "text": "GOTO_MATRIX",
+    "blockType": "transition",
+    "id": "c6d64d15-5e7c-4085-b19e-c1fbb605d115"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "cba5d828-529a-400d-8c0c-032496917b92"
+  },
+  {
+    "text": "...",
+    "blockType": "dialogue",
+    "id": "f6acc43a-baf8-4e8d-ad55-bee390f3223a"
+  },
+  {
+    "text": "START",
+    "blockType": "transition",
+    "id": "eacd7095-6cb5-4e60-ba2d-6a4bcad14273"
+  },
+  {
+    "text": "end action",
+    "blockType": "action",
+    "id": "da77794d-1b50-4de6-afb6-b8332f7c1c82"
+  },
+  {
+    "text": "GOTO_MATRIX",
+    "blockType": "sceneHeading",
+    "id": "0fde8563-68c4-4c4b-8773-4dfc88e02cce"
+  },
+  {
+    "text": "Punk Girl",
+    "blockType": "character",
+    "id": "5cebe881-01c5-4961-a247-a4196f02f876"
+  },
+  {
+    "text": "My name is Aria! ",
+    "blockType": "dialogue",
+    "id": "0bc8d8ef-116a-4864-b87f-d2727e6454fc"
+  },
+  {
+    "text": "left",
+    "blockType": "general",
+    "id": "ebae0fa0-73ee-4e00-962d-4f8fa814e510"
+  },
+  {
+    "text": "Trinity",
+    "blockType": "character",
+    "id": "5e6cd7be-e958-4415-893c-0a76cd29eccb"
+  },
+  {
+    "text": "You [color=red]know[/color] the truth then. [p]The Matrix has you.  ",
+    "blockType": "dialogue",
+    "id": "90b23872-23c6-448d-af21-b1da80ea8369"
+  },
+  {
+    "text": "right",
+    "blockType": "general",
+    "id": "3be39afd-d8c1-4f7b-9c52-d8c9d0903f78"
+  },
+  {
+    "text": "Trinity",
+    "blockType": "character",
+    "id": "d73e4fde-5406-4269-a716-6fedf1384b54"
+  },
+  {
+    "text": "I'm here to get you out.  ",
+    "blockType": "dialogue",
+    "id": "13430213-2320-4c30-97e6-2957b565e654"
+  },
+  {
+    "text": "right",
+    "blockType": "general",
+    "id": "380f0c1d-6e6e-4208-9271-afa613c0b04d"
+  },
+  {
+    "text": "Action",
+    "blockType": "character",
+    "id": "6aa6307e-d1c1-4dd2-884d-ce6dde3025f3"
+  },
+  {
+    "text": "What you do next seems obvious, except: ",
+    "blockType": "dialogue",
+    "id": "9a4fe882-3985-4afa-a820-ea1d2d3b7f0c"
+  },
+  {
+    "text": "right",
+    "blockType": "general",
+    "id": "13f2fbc7-9383-4793-ac4e-84e682996517"
+  },
+  {
+    "text": "action",
+    "blockType": "action",
+    "id": "d80a763a-ecea-4602-8a8c-1602fd02eb70"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "56de6b7f-498b-4d44-88de-64f9635dc6b8"
+  },
+  {
+    "text": "Go with Trinity.",
+    "blockType": "dialogue",
+    "id": "aac2121e-5e44-4ebf-8bd2-eb2a80434f48"
+  },
+  {
+    "text": "GOTO_LEAVEMATRIX",
+    "blockType": "transition",
+    "id": "3a4b0ab9-5f19-401c-bb19-443e07159cc2"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "65165b50-1424-4cd5-b0a3-3c423bfcc5e8"
+  },
+  {
+    "text": "I have something to do here.",
+    "blockType": "dialogue",
+    "id": "d385de01-52af-4ee1-8e3e-c391a0567e8f"
+  },
+  {
+    "text": "GOTO_BACKATBENCH",
+    "blockType": "transition",
+    "id": "2d1218dc-ee23-4e30-af38-e19f88aee18f"
+  },
+  {
+    "text": "end action",
+    "blockType": "action",
+    "id": "14239a1f-9583-4e95-bea9-36d2e1414314"
+  },
+  {
+    "text": "GOTO_LEAVEMATRIX",
+    "blockType": "sceneHeading",
+    "id": "a54914b6-0775-4f17-bcb7-d057cc27d931"
+  },
+  {
+    "text": "Punk Girl",
+    "blockType": "character",
+    "id": "2026ed6a-1092-4be2-95a9-c09d95084619"
+  },
+  {
+    "text": "Suddenly you [color=red]feel[/color] really wierd. ",
+    "blockType": "dialogue",
+    "id": "0a5253d9-1af3-4d94-8ab7-78459c5e7a03"
+  },
+  {
+    "text": "Action",
+    "blockType": "character",
+    "id": "b831c1cd-7ce6-43d3-ab45-90d4d98aace9"
+  },
+  {
+    "text": "The world around you changes: ",
+    "blockType": "dialogue",
+    "id": "e2043c1d-198b-4c0a-9db9-36ba4ef47b42"
+  },
+  {
+    "text": "action",
+    "blockType": "action",
+    "id": "037056f2-2dfe-4a65-bc3b-afa88a837c9b"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "2e35c02f-6ff5-4643-b6aa-6af61619f6fc"
+  },
+  {
+    "text": "Wake up from the dream...",
+    "blockType": "dialogue",
+    "id": "f026e852-99ca-448c-8e85-2ff95431a133"
+  },
+  {
+    "text": "ENDING2",
+    "blockType": "transition",
+    "id": "2c13ac78-7964-404e-8cfb-f590d03a098c"
+  },
+  {
+    "text": "end action",
+    "blockType": "action",
+    "id": "9f5eed30-cfac-4d9f-bb02-d8986029fd8f"
+  },
+  {
+    "text": "GOTO_HANGUP",
+    "blockType": "sceneHeading",
+    "id": "3f14f510-44d5-41ae-b3c8-f1a82f7cf384"
+  },
+  {
+    "text": "Trinity",
+    "blockType": "character",
+    "id": "ade3a885-8ff1-452a-b8d4-3c9da1ca359a"
+  },
+  {
+    "text": "... ",
+    "blockType": "dialogue",
+    "id": "7b6ee387-7221-4106-8e25-728288d0f8dd"
+  },
+  {
+    "text": "Empty",
+    "blockType": "character",
+    "id": "fa21bf38-bfbc-4056-b75d-eab9bc036ad0"
+  },
+  {
+    "text": "... ",
+    "blockType": "dialogue",
+    "id": "9874ae81-974f-4bd2-8316-8edd7444a396"
+  },
+  {
+    "text": "Punk Girl",
+    "blockType": "character",
+    "id": "a353b953-8ba9-4d54-9164-b9239438e8a3"
+  },
+  {
+    "text": "The person on the other end of the phone hangs up. ",
+    "blockType": "dialogue",
+    "id": "63135f71-4151-442b-907a-23d7c1631202"
+  },
+  {
+    "text": "Punk Girl",
+    "blockType": "character",
+    "id": "19cd26da-1c8a-444b-9348-597aabaf588d"
+  },
+  {
+    "text": "Well, guess that's another [color=red]funny[/color] thing that happened to me today. ",
+    "blockType": "dialogue",
+    "id": "d57cac9f-4dbc-4e13-a25f-7ca36a180670"
+  },
+  {
+    "text": "left",
+    "blockType": "general",
+    "id": "98daac9a-f50b-434e-8e4e-6b8e14e94f63"
+  },
+  {
+    "text": "Action",
+    "blockType": "character",
+    "id": "55770dd6-f3c5-4bcf-b0b7-b0f52a0b72f5"
+  },
+  {
+    "text": "You put the old phone back on the hook and walk out of the phone booth, [color=red]lost[/color] in thought: ",
+    "blockType": "dialogue",
+    "id": "276f33fb-0758-4439-81eb-a11d9b6dcd4c"
+  },
+  {
+    "text": "left",
+    "blockType": "general",
+    "id": "53f34f29-82f0-4049-9e47-499be77452c6"
+  },
+  {
+    "text": "action",
+    "blockType": "action",
+    "id": "10b33b3c-f702-462b-947e-46dd7a63ce18"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "88e2910d-afe9-43b3-83eb-3e3dabd32613"
+  },
+  {
+    "text": "Hey, that old bench again!",
+    "blockType": "dialogue",
+    "id": "f50080d8-d6da-42c0-8a44-49ee60bb54a2"
+  },
+  {
+    "text": "ENDING3",
+    "blockType": "transition",
+    "id": "6d7916b1-08e7-4728-81eb-fa10f044880d"
+  },
+  {
+    "text": "end action",
+    "blockType": "action",
+    "id": "0b3d3575-e3d5-45fd-a6ee-8d4bc911a8be"
+  },
+  {
+    "text": "GOTO_INTOSTORE",
+    "blockType": "sceneHeading",
+    "id": "1c392cc9-1133-4eaf-a3c3-a9eaac88e918"
+  },
+  {
+    "text": "Punk Girl",
+    "blockType": "character",
+    "id": "bdd5d794-b080-4bda-868b-a197caf1c8f6"
+  },
+  {
+    "text": "There are some [color=red]good[/color] vibes coming from this store.",
+    "blockType": "dialogue",
+    "id": "5723b243-16c2-4a19-b57a-674b4f32b43e"
+  },
+  {
+    "text": "left",
+    "blockType": "general",
+    "id": "a913a56b-a307-46f6-a8c2-b982fc5d95bd"
+  },
+  {
+    "text": "Punk Girl",
+    "blockType": "character",
+    "id": "cdbfba37-3577-44ee-b15b-f29b81853e51"
+  },
+  {
+    "text": "Maybe someone will be [color=red]nice[/color] enough to help me get home. ",
+    "blockType": "dialogue",
+    "id": "5027cca5-912a-4409-b5a9-922bc8454540"
+  },
+  {
+    "text": "left",
+    "blockType": "general",
+    "id": "5aa1d8ed-1d84-4f76-b541-5ad36d378bb3"
+  },
+  {
+    "text": "Action",
+    "blockType": "character",
+    "id": "bc0c9d5f-7dea-4b60-802a-bcc1ca757934"
+  },
+  {
+    "text": "Inside the store you see: ",
+    "blockType": "dialogue",
+    "id": "b9f4028e-f505-46d8-8929-53ec15c9594f"
+  },
+  {
+    "text": "left",
+    "blockType": "general",
+    "id": "e0a72945-52f3-4787-bbe0-6614b88e5be6"
+  },
+  {
+    "text": "action",
+    "blockType": "action",
+    "id": "fb689b09-7d7b-4777-91b1-72342daf10b4"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "9bb42388-b5de-4c27-801d-65163c50acec"
+  },
+  {
+    "text": "The person behind the counter.",
+    "blockType": "dialogue",
+    "id": "3252b3f8-cf52-4b1a-844c-9fcc0335f661"
+  },
+  {
+    "text": "GOTO_STOREPERSON",
+    "blockType": "transition",
+    "id": "5eba53a0-3053-43dc-afa4-405089098479"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "27afd9fd-745b-4b8b-9fc0-e8bc8b001701"
+  },
+  {
+    "text": "Another customer nearby.",
+    "blockType": "dialogue",
+    "id": "c044b883-c2ed-4b65-8988-f7e93d59385e"
+  },
+  {
+    "text": "GOTO_ASKSTRANGER",
+    "blockType": "transition",
+    "id": "bc5413c3-f49c-42c2-90a8-cbd63cb0d920"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "790a420c-deec-4386-bb23-8b540090b367"
+  },
+  {
+    "text": "Nothing interesting here.",
+    "blockType": "dialogue",
+    "id": "ddfeb0da-73d9-43e8-ae0f-11a0d8f16d5e"
+  },
+  {
+    "text": "GOTO_BACKATBENCH",
+    "blockType": "transition",
+    "id": "d77260a4-4908-40fa-b21c-d60cb21f6ed7"
+  },
+  {
+    "text": "end action",
+    "blockType": "action",
+    "id": "aa5a7505-29a5-4794-825b-d48e1e9de812"
+  },
+  {
+    "text": "GOTO_STOREPERSON",
+    "blockType": "sceneHeading",
+    "id": "cf8a2219-19d3-4149-84c4-e03a14e17ea5"
+  },
+  {
+    "text": "Punk Girl",
+    "blockType": "character",
+    "id": "4ba757a7-2cb1-4a4c-9c65-af95d051dffd"
+  },
+  {
+    "text": "Maybe the [color=red]person[/color] at the register can offer up some help.",
+    "blockType": "dialogue",
+    "id": "74ab12c2-e0b7-41bc-8bd5-4eadedfcf2aa"
+  },
+  {
+    "text": "left",
+    "blockType": "general",
+    "id": "c6da72fa-20b2-4c85-9a3a-4ce933daf160"
+  },
+  {
+    "text": "ALIEN",
+    "blockType": "character",
+    "id": "1ec090c8-7aec-4630-a17f-40e504e020bc"
+  },
+  {
+    "text": "How can I help ya?  ",
+    "blockType": "dialogue",
+    "id": "46248da8-f050-4be2-8ec9-dab5558f5e5d"
+  },
+  {
+    "text": "right",
+    "blockType": "general",
+    "id": "bb25b599-c8a8-45c6-8f6c-78032e0f9d6a"
+  },
+  {
+    "text": "Action",
+    "blockType": "character",
+    "id": "2fa61c5d-914b-482a-bba9-6f2c6a10b376"
+  },
+  {
+    "text": "Your response to their offer: ",
+    "blockType": "dialogue",
+    "id": "087cf12e-d949-475d-b192-4a971610e984"
+  },
+  {
+    "text": "right",
+    "blockType": "general",
+    "id": "49a401c7-6ddf-4c53-8175-9fbb20b92c5f"
+  },
+  {
+    "text": "action",
+    "blockType": "action",
+    "id": "5a044f1c-4a6e-46b6-a287-4d57cbb5830a"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "e0cf01a5-ee77-46e0-bd00-ce0e4f0888ff"
+  },
+  {
+    "text": "I'd appreciate a ride home.",
+    "blockType": "dialogue",
+    "id": "a1b726c5-def0-418c-9f45-c3b15075911a"
+  },
+  {
+    "text": "GOTO_ASKRIDE",
+    "blockType": "transition",
+    "id": "ddb5370f-046d-4ece-a129-e9f0346954ff"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "f0908f55-9404-4873-816e-d9283d67dac1"
+  },
+  {
+    "text": "Wait, what did I ask?",
+    "blockType": "dialogue",
+    "id": "d06c8be6-5d02-426c-bb4f-008352ff3a5a"
+  },
+  {
+    "text": "GOTO_STOREPERSON",
+    "blockType": "transition",
+    "id": "ea7aa904-bdbf-47e7-9b13-250238586c0c"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "fadd05af-82ea-4ed6-88ff-747ff410bb54"
+  },
+  {
+    "text": "Leave the area quickly.",
+    "blockType": "dialogue",
+    "id": "0e6af32f-4880-413d-a5dd-40ba745b1e47"
+  },
+  {
+    "text": "GOTO_BACKATBENCH",
+    "blockType": "transition",
+    "id": "92c6dee5-769e-4c98-8800-ddf726b47388"
+  },
+  {
+    "text": "end action",
+    "blockType": "action",
+    "id": "fa3a2649-ed15-4bbf-986b-2aad9604086d"
+  },
+  {
+    "text": "GOTO_ASKSTRANGER",
+    "blockType": "sceneHeading",
+    "id": "10b67124-38ee-4f9c-86cc-ef5eb941a983"
+  },
+  {
+    "text": "Punk Girl",
+    "blockType": "character",
+    "id": "1412187f-7d4b-4e1d-b4f4-e8dd525576dc"
+  },
+  {
+    "text": "You look at this [color=red]friendly[/color] person and ask for a ride home.",
+    "blockType": "dialogue",
+    "id": "90ffb998-8efb-4e6e-9c03-f836b0c58166"
+  },
+  {
+    "text": "left",
+    "blockType": "general",
+    "id": "71f6d3f2-7eb4-4938-b33a-ce569636348b"
+  },
+  {
+    "text": "Stranger",
+    "blockType": "character",
+    "id": "e7c4093b-2ff1-4a8f-ade1-0846172f78a2"
+  },
+  {
+    "text": "Yeah, I can [color=red]help[/color] you out, and maybe laugh about it later.  ",
+    "blockType": "dialogue",
+    "id": "8828d4b9-f91a-4e19-811c-2fa6f5ecac27"
+  },
+  {
+    "text": "right",
+    "blockType": "general",
+    "id": "9daac4b4-513e-45c3-978b-8216a502c8f8"
+  },
+  {
+    "text": "Action",
+    "blockType": "character",
+    "id": "e4227ba9-5980-4fa9-98d0-ab42a471fd57"
+  },
+  {
+    "text": "Your response to their offer: ",
+    "blockType": "dialogue",
+    "id": "68cc0cf3-9720-4eb6-aa02-a5840350a438"
+  },
+  {
+    "text": "right",
+    "blockType": "general",
+    "id": "9c64b58c-e515-4105-9fda-ca1878c86c5c"
+  },
+  {
+    "text": "action",
+    "blockType": "action",
+    "id": "d53d1b60-4ff6-41d1-b4c2-eb8d196e4cac"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "9baa2e29-b39a-465d-82c0-c9f1237f6a10"
+  },
+  {
+    "text": "I'd appreciate a ride home.",
+    "blockType": "dialogue",
+    "id": "e053135c-560b-4619-8ed4-ff45a4db57fd"
+  },
+  {
+    "text": "GOTO_ASKRIDE",
+    "blockType": "transition",
+    "id": "53550910-a7cb-45f9-8b8d-2ab4bed25deb"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "2f44db66-39d2-41fd-96f8-b8ca5707864a"
+  },
+  {
+    "text": "Wait, what did I ask?",
+    "blockType": "dialogue",
+    "id": "dd85a104-5577-48d7-8abd-ec1b0d54b823"
+  },
+  {
+    "text": "GOTO_ASKSTRANGER",
+    "blockType": "transition",
+    "id": "5f84effe-3123-4f33-8af5-9cff3a9daae6"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "bb865185-7dd3-4322-97ac-24ac6cd0b7d8"
+  },
+  {
+    "text": "Leave the area quickly.",
+    "blockType": "dialogue",
+    "id": "14fc735c-6189-45fe-be0d-0a503e97b2dd"
+  },
+  {
+    "text": "GOTO_BACKATBENCH",
+    "blockType": "transition",
+    "id": "cc053c8e-f6bd-43dc-89d9-95cfdfb1a383"
+  },
+  {
+    "text": "end action",
+    "blockType": "action",
+    "id": "0938126a-0563-43ae-b057-f5874efe83ab"
+  },
+  {
+    "text": "GOTO_COMPUTER",
+    "blockType": "sceneHeading",
+    "id": "90ba96a1-67f7-43c7-b586-62e2294b46e9"
+  },
+  {
+    "text": "Punk Girl",
+    "blockType": "character",
+    "id": "a512830e-2900-4c7e-8693-09b85d0c0d96"
+  },
+  {
+    "text": "This place is [color=red]funny[/color], and not where I was when I fell asleep. ",
+    "blockType": "dialogue",
+    "id": "09fbf8ed-1c39-4ccd-a498-04db4173acec"
+  },
+  {
+    "text": "left",
+    "blockType": "general",
+    "id": "3c1a8a90-27e1-44aa-b797-504531490565"
+  },
+  {
+    "text": "Punk Girl",
+    "blockType": "character",
+    "id": "0bb29384-6963-4eb7-9d64-3b6990e2e253"
+  },
+  {
+    "text": "Ok brain, the pizza I ate last night was [color=red]wierd[/color], but how do get back to where I was?  ",
+    "blockType": "dialogue",
+    "id": "23b8419a-3458-4366-9898-e3815f21f8fe"
+  },
+  {
+    "text": "left",
+    "blockType": "general",
+    "id": "13ebc272-44a6-43b0-ac1b-08116574de64"
+  },
+  {
+    "text": "Action",
+    "blockType": "character",
+    "id": "2fbbf1ed-c13a-4d24-bd7f-2f616ab4af67"
+  },
+  {
+    "text": "Your brain responds with [color=green]ideas[/color]: ",
+    "blockType": "dialogue",
+    "id": "3bb520fb-9bbf-4fec-a9fd-21fec15c877f"
+  },
+  {
+    "text": "left",
+    "blockType": "general",
+    "id": "dc45ead8-dc7f-4d7a-acc3-a68be6c5c68b"
+  },
+  {
+    "text": "action",
+    "blockType": "action",
+    "id": "7e2b3176-7d91-40b6-899c-132786c8857c"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "b9be3cba-5930-46f8-aef7-8539bdf52226"
+  },
+  {
+    "text": "Make a phone call. (todo)",
+    "blockType": "dialogue",
+    "id": "9ba71dbf-7773-46a8-bcf1-79c278b1936e"
+  },
+  {
+    "text": "GOTO_CELLPHONE",
+    "blockType": "transition",
+    "id": "57e4595a-f901-42b4-9dc9-6ce3574b2903"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "1bd1df49-f7a0-468c-9f11-92c368589c1d"
+  },
+  {
+    "text": "Check out the phone booth.",
+    "blockType": "dialogue",
+    "id": "8b56542e-e4f4-4f5c-8fcb-ad763f883b14"
+  },
+  {
+    "text": "GOTO_PHONEBOOTH",
+    "blockType": "transition",
+    "id": "f8a5e2be-de55-4c06-92c2-db8a2461d93d"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "39f452c1-79e4-43a7-8148-ac001e61f084"
+  },
+  {
+    "text": "Get some sleep.",
+    "blockType": "dialogue",
+    "id": "0f4b76c1-a277-4ff2-bf7f-4cc7c2d02ca1"
+  },
+  {
+    "text": "GOTO_BACKATBENCH",
+    "blockType": "transition",
+    "id": "90366676-0013-44c9-ad6b-7e5454a7ec0c"
+  },
+  {
+    "text": "end action",
+    "blockType": "action",
+    "id": "e07b7831-0bc7-4db8-8317-d2acfeb9fe8c"
+  },
+  {
+    "text": "GOTO_CELLPHONE",
+    "blockType": "sceneHeading",
+    "id": "317894c6-d80c-4f94-8afa-4b4457f12562"
+  },
+  {
+    "text": "Punk Girl",
+    "blockType": "character",
+    "id": "ccd585af-3cb5-4e8c-8404-0d3d9084f3e5"
+  },
+  {
+    "text": "You take your cell phone out of your pocket, and [color=green]laugh[/color] at the [color=red]cute[/color] cat picture on the lock screen. ",
+    "blockType": "dialogue",
+    "id": "e8bce145-b8c0-42e0-acaa-f53f6915b19a"
+  },
+  {
+    "text": "Punk Girl",
+    "blockType": "character",
+    "id": "1d078fa2-8cbe-4f1c-93e7-290f08cef7ee"
+  },
+  {
+    "text": "Ok, what is the [color=red]right[/color] person who should I call that will make me feel happy? ",
+    "blockType": "dialogue",
+    "id": "5511ca00-5250-47f3-ac8f-9bf0b04dfe1d"
+  },
+  {
+    "text": "left",
+    "blockType": "general",
+    "id": "865ae078-92a0-42cf-977a-6fe7a1455c9c"
+  },
+  {
+    "text": "Action",
+    "blockType": "character",
+    "id": "cea8c38b-2434-4de9-8c41-cbecabe5629f"
+  },
+  {
+    "text": "Your phone begins to ring: ",
+    "blockType": "dialogue",
+    "id": "940229ff-1cfb-4001-84ff-85d55b64f82c"
+  },
+  {
+    "text": "left",
+    "blockType": "general",
+    "id": "31b11725-cf02-4cae-80a6-ddf09162e55a"
+  },
+  {
+    "text": "action",
+    "blockType": "action",
+    "id": "fd16a8fe-cbe3-4d0d-b5fd-ca44985b756c"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "108150c3-762a-4f88-a82e-25a21555aa3f"
+  },
+  {
+    "text": "Strange. Answer it.",
+    "blockType": "dialogue",
+    "id": "98d1d377-205a-490f-88ba-cd9c8c8daec2"
+  },
+  {
+    "text": "GOTO_ANSWERPHONE",
+    "blockType": "transition",
+    "id": "6d53919e-4c01-4f73-9fca-63a2ecb10c34"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "4dbfa239-0625-4f8d-afca-81f3b5131755"
+  },
+  {
+    "text": "Decline the call, phone home.",
+    "blockType": "dialogue",
+    "id": "ce467fc2-28da-4b24-aeae-949ebf1dc725"
+  },
+  {
+    "text": "GOTO_CALLHOME",
+    "blockType": "transition",
+    "id": "cf6af3d7-9142-4d15-807d-14fbe2842cf6"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "29cc3f15-c337-44e7-a105-c06b46f94183"
+  },
+  {
+    "text": "Do something else.",
+    "blockType": "dialogue",
+    "id": "edcc4476-77a5-4b36-9dac-6d47d4c61361"
+  },
+  {
+    "text": "GOTO_BACKATBENCH",
+    "blockType": "transition",
+    "id": "f0b14f8d-0cff-4d67-b094-26119742b745"
+  },
+  {
+    "text": "end action",
+    "blockType": "action",
+    "id": "7c7aa3ba-d56e-4c6f-ab71-96b04fa52adf"
+  },
+  {
+    "text": "GOTO_COMEDY",
+    "blockType": "sceneHeading",
+    "id": "7822bc45-2023-4da0-ad7b-18489b652a06"
+  },
+  {
+    "text": "Punk Girl",
+    "blockType": "character",
+    "id": "96333ae7-501d-4360-9b8f-dab609fd2f91"
+  },
+  {
+    "text": "That's where I [color=red]want[/color] to be, somewhere with funny people who will make me laugh. ",
+    "blockType": "dialogue",
+    "id": "d8af6845-9e62-43b3-baf9-15c9a95a72ac"
+  },
+  {
+    "text": "left",
+    "blockType": "general",
+    "id": "8c2cd9b6-24e6-44fd-b5db-92bea759c1aa"
+  },
+  {
+    "text": "Action",
+    "blockType": "character",
+    "id": "5146c0f6-3b11-4deb-9050-9149fda25e5c"
+  },
+  {
+    "text": "You walk across the street and have a couple of [color=green]choices[/color] in front of you: ",
+    "blockType": "dialogue",
+    "id": "a863fb66-b4b5-4134-963e-b9688785df37"
+  },
+  {
+    "text": "left",
+    "blockType": "general",
+    "id": "81d7668c-f721-4809-94e1-d3568ffeb747"
+  },
+  {
+    "text": "action",
+    "blockType": "action",
+    "id": "ae06eab9-9691-4820-9a30-6e7441ab20fb"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "0235357d-6c11-4e6b-9318-86865bca1479"
+  },
+  {
+    "text": "Ask the person outside for a ride.",
+    "blockType": "dialogue",
+    "id": "ca42309c-dec1-40f6-b6cb-0812b4f79bef"
+  },
+  {
+    "text": "GOTO_ASKSTRANGER",
+    "blockType": "transition",
+    "id": "2c6012db-ce24-4061-995a-2eebb576993d"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "651d1ad2-9c09-428a-b89e-c5b2daec132f"
+  },
+  {
+    "text": "Go inside.",
+    "blockType": "dialogue",
+    "id": "9c7ffb74-4f5c-4172-9456-596f14cd4036"
+  },
+  {
+    "text": "GOTO_INSIDECOMEDY",
+    "blockType": "transition",
+    "id": "04da7087-a951-4605-a505-93a8174fa639"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "538ea962-56cc-498c-83ca-890717c338e7"
+  },
+  {
+    "text": "Sit down first.",
+    "blockType": "dialogue",
+    "id": "5b2ec222-1738-4194-8a31-85e152c48a36"
+  },
+  {
+    "text": "GOTO_BACKATBENCH",
+    "blockType": "transition",
+    "id": "083bffb4-c59c-42ff-9018-2974f5477437"
+  },
+  {
+    "text": "end action",
+    "blockType": "action",
+    "id": "7430c4c1-1d04-420d-a7b3-cc66b190aea2"
+  },
+  {
+    "text": "GOTO_INSIDECOMEDY",
+    "blockType": "sceneHeading",
+    "id": "9eb523a8-2e09-4caf-af00-d9ff4274c55a"
+  },
+  {
+    "text": "Punk Girl",
+    "blockType": "character",
+    "id": "acde14d4-a497-44fa-b258-93884cec8a3e"
+  },
+  {
+    "text": "This looks like a nice place, great [color=red]music[/color], and full of [color=green]friendly[/color] people. ",
+    "blockType": "dialogue",
+    "id": "aec3d8ab-59a1-4935-966b-92966559a5ce"
+  },
+  {
+    "text": "left",
+    "blockType": "general",
+    "id": "a2ce9d1a-3f95-4511-894c-1de943df729a"
+  },
+  {
+    "text": "Action",
+    "blockType": "character",
+    "id": "814a8177-11f1-433d-90e5-0975305fe132"
+  },
+  {
+    "text": "You look around at the venue and see some [color=green]good[/color] options: ",
+    "blockType": "dialogue",
+    "id": "e499bce1-f312-4060-b972-90ac8834a5ba"
+  },
+  {
+    "text": "left",
+    "blockType": "general",
+    "id": "4ee61f6f-d04f-4348-9aab-075af803dc74"
+  },
+  {
+    "text": "action",
+    "blockType": "action",
+    "id": "ccd653e7-9dfa-4cb9-8a51-bed3b7463efe"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "a99d2354-289d-43ea-a1bb-9197ba65e377"
+  },
+  {
+    "text": "Ask the attendent for some help.",
+    "blockType": "dialogue",
+    "id": "4eabb89e-58bd-42a8-bc7f-5169902f50d8"
+  },
+  {
+    "text": "GOTO_STOREPERSON",
+    "blockType": "transition",
+    "id": "ab6724d8-fd4a-4852-b08f-69abc7340492"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "0b82020c-92ff-4b5c-bd3f-40cd20687ac6"
+  },
+  {
+    "text": "This is a good place to hang.",
+    "blockType": "dialogue",
+    "id": "239028f4-7688-4540-82b1-e3fcb7bd2e02"
+  },
+  {
+    "text": "ENDING2",
+    "blockType": "transition",
+    "id": "07a8cb15-5466-466b-883c-4759ac002864"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "3e1691f9-bdc3-4fe5-9c12-82e2aa3bd301"
+  },
+  {
+    "text": "Nevermind, back outside.",
+    "blockType": "dialogue",
+    "id": "ecc1fa08-c132-4532-8646-996520f673d2"
+  },
+  {
+    "text": "GOTO_BACKATBENCH",
+    "blockType": "transition",
+    "id": "29670c3b-91fd-4159-9fdc-3a0018f249dc"
+  },
+  {
+    "text": "end action",
+    "blockType": "action",
+    "id": "cafc1ee3-7ef4-45a9-9ca2-f2f7d3165983"
+  },
+  {
+    "text": "GOTO_EMPTY",
+    "blockType": "sceneHeading",
+    "id": "d0bf1c72-b6b7-4982-91dd-15cd93782437"
+  },
+  {
+    "text": "Punk Girl",
+    "blockType": "character",
+    "id": "b361f6e5-642d-4dcc-9ea6-fd3688d4dd0e"
+  },
+  {
+    "text": "[this is a placeholder character entry, if you have arrived here, a previous entry is empty]",
+    "blockType": "dialogue",
+    "id": "ef7b343c-fce9-4425-8fe0-09a5ababc319"
+  },
+  {
+    "text": "Action",
+    "blockType": "character",
+    "id": "088e3f63-4517-49c4-962f-442a1c2b96b8"
+  },
+  {
+    "text": "[placeholder action entry, probably best to keep to less than 4 answers, can scroll, but not great]",
+    "blockType": "dialogue",
+    "id": "b95aa904-cd80-48f9-b93e-0023f20b9991"
   },
   {
     "text": "action",
@@ -223,6 +2198,51 @@
     "text": "WAKEUP",
     "blockType": "transition",
     "id": "ee6489ff-4be4-46b4-9459-581db6075eda"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "e922e046-334d-4fc0-ab04-e4c76488819b"
+  },
+  {
+    "text": "<back to test section>",
+    "blockType": "dialogue",
+    "id": "04c75b48-3fca-449d-abe8-aade1f5df2fb"
+  },
+  {
+    "text": "GOTO_HEREHOW",
+    "blockType": "transition",
+    "id": "594585c6-57d6-423e-8102-14d8bf0b1117"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "4e0b917d-2bb9-47c3-91bb-16e59890b1a5"
+  },
+  {
+    "text": "<go to the template>",
+    "blockType": "dialogue",
+    "id": "463915cf-214d-417b-8135-e941791f56cd"
+  },
+  {
+    "text": "Template_Section",
+    "blockType": "transition",
+    "id": "71a294e6-b18d-4e4f-ad2c-136643c766c5"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "ae42e391-e453-4c25-92d4-ce53b96b3512"
+  },
+  {
+    "text": "<back to this entry>",
+    "blockType": "dialogue",
+    "id": "4927762e-ae5b-454a-a6d2-7641ba89130b"
+  },
+  {
+    "text": "GOTO_EMPTY",
+    "blockType": "transition",
+    "id": "a0a2a63f-70fa-4851-aaa2-69e4ef0c0ef0"
   },
   {
     "text": "(answer)",
@@ -285,29 +2305,254 @@
     "id": "6f964849-a973-4ecc-b47c-c3a4ed559c55"
   },
   {
-    "text": "(answer)",
-    "blockType": "parenthetical",
-    "id": "ae42e391-e453-4c25-92d4-ce53b96b3512"
-  },
-  {
-    "text": "<back to this entry>",
-    "blockType": "dialogue",
-    "id": "4927762e-ae5b-454a-a6d2-7641ba89130b"
-  },
-  {
-    "text": "GOTO_EMPTY",
-    "blockType": "transition",
-    "id": "a0a2a63f-70fa-4851-aaa2-69e4ef0c0ef0"
-  },
-  {
     "text": "end action",
     "blockType": "action",
     "id": "3a0ebe60-b879-4928-adaf-4f8644dad888"
   },
   {
-    "text": "ENDING1",
+    "text": "Copy_SECTION",
+    "blockType": "sceneHeading",
+    "id": "9e99f113-5cc8-4c14-8700-e7396d0cb3ea"
+  },
+  {
+    "text": "Punk Girl",
+    "blockType": "character",
+    "id": "05d06df6-b247-4af3-9db4-93ee14616dfa"
+  },
+  {
+    "text": "... ",
+    "blockType": "dialogue",
+    "id": "65fa5c09-8043-4485-8ae4-a6c73f7698c3"
+  },
+  {
+    "text": "left",
+    "blockType": "general",
+    "id": "aa2d2081-f3f0-4dca-a979-625a439080f3"
+  },
+  {
+    "text": "LRIG KNUP",
+    "blockType": "character",
+    "id": "448a4240-d77d-4108-8caa-26e84936baf7"
+  },
+  {
+    "text": "... ",
+    "blockType": "dialogue",
+    "id": "61e8dd97-9fb2-44e1-803a-f25907cd1921"
+  },
+  {
+    "text": "right",
+    "blockType": "general",
+    "id": "b2dc87cb-c609-4d37-84d4-99eb0f34efc2"
+  },
+  {
+    "text": "Action",
+    "blockType": "character",
+    "id": "b7ce8b51-2dc5-42a0-a35a-52393bba07aa"
+  },
+  {
+    "text": "...: ",
+    "blockType": "dialogue",
+    "id": "ab10f2a5-b58c-4f0a-8cf5-cda19f52c290"
+  },
+  {
+    "text": "right",
+    "blockType": "general",
+    "id": "21773921-61ab-4d49-8eb1-fe11b36a466d"
+  },
+  {
+    "text": "action",
+    "blockType": "action",
+    "id": "7b085327-c5e3-4f51-841c-b890818ca6f8"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "6498659b-046d-4ae4-837a-e9e585c44d83"
+  },
+  {
+    "text": "... (empty)",
+    "blockType": "dialogue",
+    "id": "3940bb80-bd0b-472a-88f5-9933d1695290"
+  },
+  {
+    "text": "GOTO_EMPTY",
+    "blockType": "transition",
+    "id": "56f70453-78b5-4431-92d8-58f2497da17b"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "64cda2ca-a259-4993-870c-25bbe66cbad2"
+  },
+  {
+    "text": "... (empty)",
+    "blockType": "dialogue",
+    "id": "dc015849-8157-4f38-9635-ab0ed44b467b"
+  },
+  {
+    "text": "GOTO_EMPTY",
+    "blockType": "transition",
+    "id": "3f7ffd84-4249-46ef-9895-a98d13beab87"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "8b564f96-6eec-4f99-9ac3-877f17962a92"
+  },
+  {
+    "text": "... (empty)",
+    "blockType": "dialogue",
+    "id": "6868b32e-4b42-466f-94c6-4c50a91b81b1"
+  },
+  {
+    "text": "GOTO_EMPTY",
+    "blockType": "transition",
+    "id": "6ece3057-3941-4403-8eee-59562b90de00"
+  },
+  {
+    "text": "end action",
+    "blockType": "action",
+    "id": "d256265c-067b-40f0-8fd2-15a5e7690ca0"
+  },
+  {
+    "text": "Template_Section",
     "blockType": "sceneHeading",
     "id": "60cfbef2-5fd8-44c4-b453-d46a60d7b650"
+  },
+  {
+    "text": "Character Name",
+    "blockType": "character",
+    "id": "5fa5a822-9c9e-4acb-a8c4-c417f4d986ec"
+  },
+  {
+    "text": "Dialog 1, reasonably short so the text box doesn't overflow.",
+    "blockType": "dialogue",
+    "id": "e29090b2-6a7a-4fb0-9b7a-0c5cd321ed9a"
+  },
+  {
+    "text": "Character Name",
+    "blockType": "character",
+    "id": "ce8b032d-9b18-47e2-a745-e5b6628c09db"
+  },
+  {
+    "text": "Dialog 2, second paragraph or line, next thought, or story lines.",
+    "blockType": "dialogue",
+    "id": "c7b5d5e2-2593-43ab-b943-e86e4827ddde"
+  },
+  {
+    "text": "Character Name",
+    "blockType": "character",
+    "id": "e109b3b7-0d5c-43db-aac1-b81893afe061"
+  },
+  {
+    "text": "A generic \"left\" action places the text bubble to the left. ctrl+0",
+    "blockType": "dialogue",
+    "id": "6e0ad849-2be6-46c9-a587-fb2374e89b69"
+  },
+  {
+    "text": "left",
+    "blockType": "general",
+    "id": "8a5a64b1-1be5-4889-b45d-7af813180501"
+  },
+  {
+    "text": "Character Name",
+    "blockType": "character",
+    "id": "42fc2463-2579-4a50-bdf7-e40797364ec2"
+  },
+  {
+    "text": "A generic \"right\" action places the text bubble to the left. ctrl+0",
+    "blockType": "dialogue",
+    "id": "9c7eb1e2-dc94-4ea9-a2e6-50ca8c794a1d"
+  },
+  {
+    "text": "right",
+    "blockType": "general",
+    "id": "a6472928-48b2-44e4-9862-1746881d5796"
+  },
+  {
+    "text": "ACTION",
+    "blockType": "character",
+    "id": "0b128196-ce15-4435-a201-f356647707cf"
+  },
+  {
+    "text": "This is an action section with the text in the action dialog box",
+    "blockType": "dialogue",
+    "id": "447386f0-320f-433b-82f8-b4c1a8e3cc59"
+  },
+  {
+    "text": "action",
+    "blockType": "action",
+    "id": "0fdcec4f-2246-43fe-a46e-6212fad9f598"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "5a38391b-b191-4cfa-8e07-900a1bb7875e"
+  },
+  {
+    "text": "Text in button (template)",
+    "blockType": "dialogue",
+    "id": "6b29a361-4711-4069-bc7f-e804eb4b4f9b"
+  },
+  {
+    "text": "Template_Section",
+    "blockType": "transition",
+    "id": "ec5d6d27-039a-4008-b0d0-2f7b2d5d6b6c"
+  },
+  {
+    "text": "(answer)",
+    "blockType": "parenthetical",
+    "id": "1798477a-6605-4659-a0b5-f989a7545563"
+  },
+  {
+    "text": "Text in button (goto_empty)",
+    "blockType": "dialogue",
+    "id": "599fb844-9aa2-4dc0-8a86-a707c880e0af"
+  },
+  {
+    "text": "GOTO_EMPTY",
+    "blockType": "transition",
+    "id": "d19112e4-2dcb-4f52-bbfa-6237cfcc0db1"
+  },
+  {
+    "text": "end action",
+    "blockType": "action",
+    "id": "77a626bf-253d-4d5e-affe-65cc11c1aa6f"
+  },
+  {
+    "text": "// you can use \"bbcode\" text in the dialog boxes to apply effects to text",
+    "blockType": "general",
+    "id": "41affa9d-f84f-4448-a040-a85e616b6e0a"
+  },
+  {
+    "text": "// for example, this [color=red]text[/color] is red, just applies red to \"text\" ",
+    "blockType": "general",
+    "id": "13f69ecb-2350-4ec5-90a6-2dbc08f8b985"
+  },
+  {
+    "text": "// https://docs.godotengine.org/en/stable/tutorials/ui/bbcode_in_richtextlabel.html",
+    "blockType": "general",
+    "id": "b83b73a6-0de9-4d38-85da-0b94ef53b3b9"
+  },
+  {
+    "text": "",
+    "blockType": "general",
+    "id": "2401e348-51d8-4fa1-8ab2-9c77bb851f01"
+  },
+  {
+    "text": "Note: Try not to leave extra empty lines in the script, as it breaks the parser",
+    "blockType": "general",
+    "id": "f42a517c-6063-469e-aab9-5a80a7555c16"
+  },
+  {
+    "text": "Note: I should probably try and fix that...",
+    "blockType": "general",
+    "id": "68482175-b9bc-44d7-aae1-418a509e3f97"
+  },
+  {
+    "text": "ENDING1",
+    "blockType": "sceneHeading",
+    "id": "aaa3f11f-58cd-4061-9f74-98b4e9d23cb6"
   },
   {
     "text": "Ending",
@@ -315,7 +2560,7 @@
     "id": "f15ff8af-0902-49ee-8870-75f7f768aa88"
   },
   {
-    "text": "This is the first ending.",
+    "text": "This is it, your way your way back [color=red]home[/color].",
     "blockType": "dialogue",
     "id": "a1494726-510c-455f-9c5f-794affd1a923"
   },
@@ -330,7 +2575,7 @@
     "id": "5a31a8c5-e01c-47a5-a3de-696a2afa855b"
   },
   {
-    "text": "You find your way back home",
+    "text": "Find your way back home.",
     "blockType": "dialogue",
     "id": "86b58746-24f8-479a-9b2a-64359112cf69"
   },
@@ -355,7 +2600,7 @@
     "id": "2c0d943b-06f6-43f7-a794-bb29073d721d"
   },
   {
-    "text": "This is the second ending.",
+    "text": "This place is different from where you were before, but is [color=red]new[/color] and comforting.",
     "blockType": "dialogue",
     "id": "7ad9531b-ede5-47d6-a2fa-a75dbe5dbc0d"
   },
@@ -370,7 +2615,7 @@
     "id": "ac491b51-7c79-424a-b43b-045664e5f5dd"
   },
   {
-    "text": "You find a new place",
+    "text": "You find a new place.",
     "blockType": "dialogue",
     "id": "7acad009-22a7-4a57-98bf-c108b5ea51c1"
   },
@@ -395,7 +2640,7 @@
     "id": "c61fdfdd-269e-47c3-a839-59a502713f39"
   },
   {
-    "text": "This is the third ending.",
+    "text": "Back on the bench, you get comfortable and close your eyes...",
     "blockType": "dialogue",
     "id": "ad39478e-44fc-4838-9100-f7770b4bb85c"
   },
@@ -410,7 +2655,7 @@
     "id": "32373e05-005c-4b8b-929b-818d991bc6cf"
   },
   {
-    "text": "You return to where you started",
+    "text": "Back where you started...",
     "blockType": "dialogue",
     "id": "ef6021b7-8d1d-45e0-a2b0-27cf430dcd01"
   },
@@ -435,7 +2680,7 @@
     "id": "5fc28bbe-86d4-4aef-9fff-2a801ed41b5d"
   },
   {
-    "text": "This is the fourth ending.",
+    "text": "You don't know where you are, but this is [color=red]not[/color] where you want to be...",
     "blockType": "dialogue",
     "id": "9c9f600f-212f-4182-8707-f88bb597cd4e"
   },
@@ -450,7 +2695,7 @@
     "id": "24400b0b-c64b-4266-97e0-226fc60d4155"
   },
   {
-    "text": "You remain lost",
+    "text": "You remain lost.",
     "blockType": "dialogue",
     "id": "955816fd-a967-4163-b9ca-8ccd0a631ab9"
   },

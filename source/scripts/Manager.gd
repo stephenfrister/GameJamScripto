@@ -61,18 +61,22 @@ func _on_set_window_position():
 
 func _on_game_start():
 	
+	$Start.game_starting = true
 	$Transitions.play("start_to_main")
 	
 	pass
 
 func _on_game_over(): 
 	
+	$Finish.game_ending = true
 	$Transitions.play("main_to_finish")
 	
 	pass
 
 func _on_start_over(): 
 	
+	$Finish.game_ending = false
+	$Start.game_starting = false
 	$Transitions.play("finish_to_start")
 	
 	pass

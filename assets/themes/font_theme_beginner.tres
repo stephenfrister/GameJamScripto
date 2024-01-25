@@ -1,0 +1,8 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://bawlegf3i1q33"]
+
+[ext_resource type="FontFile" uid="uid://bq5y6vujud62y" path="res://assets/fonts/EduBeginner-Regular.ttf" id="1_aibmv"]
+
+[resource]
+default_font_size = 41
+Label/fonts/font = ExtResource("1_aibmv")
+RichTextLabel/fonts/normal_font = ExtResource("1_aibmv")
