@@ -1,6 +1,7 @@
 Game Jam Project built using the Scripto tools and workflow. 
 
-Built in a couple of days, this is a short visual novel with a branching storyline structure. There are four possible endings. 
+Built in a couple of days, this is a short visual novel with a branching storyline structure.  
+There are four possible endings. 
 
 If you'd like to play the game in the browser, or download the executable directly, head over to the Itch.io site.  
 Itch.io: https://infinite8bit-studios.itch.io/the-long-road
